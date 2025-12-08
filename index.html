@@ -20,7 +20,7 @@
     <section id="home" class="hero">
         <div>
             <h1>California National Parks in 2026</h1>
-            <p>Exploring the state's national parks, one month at a time</p>
+            <p>Exploring the state's national parks</p>
         </div>
     </section>
 
@@ -28,7 +28,61 @@
     <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Tyler's Treks</h2>
-            <p>Welcome to Tyler's Treks!</p>
+            <p>In 2026, I've made a goal of going to all of the national parks in California. I made this site to document my trips.</p>
+            <h3>December 7, 2025: Truck Setup</h3>
+            <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="images/camper_shell_rear_closed.jpg" alt="Rear View">
+                        <div class="carousel-caption">
+                            <h3>Rear View</h3>
+                            <p>I'm a big fan of the little smily face on the left.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/camper_shell_rear_view.jpg" alt="Open Bavk View">
+                        <div class="carousel-caption">
+                            <h3>Open back View</h3>
+                            <p>Very very dusty. Probably should clean</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/camper_shell_side_view.jpg" alt="Rocky Trail">
+                        <div class="carousel-caption">
+                            <h3>Side View</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/materials.jpg" alt="Home Depot haul">
+                        <div class="carousel-caption">
+                            <h3>Home Depot haul</h3>
+                            <p>Lotta extra wood cuz I told the guy the wrong measurements</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/bed_setup.jpg" alt="Bed Setup initial">
+                        <div class="carousel-caption">
+                            <h3>Bed Setup initial</h3>
+                            <p>Just a couple of 2 by 4s and added some all weather carpet.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/bed_setup_2.jpg" alt="Bed Setup Finished">
+                        <div class="carousel-caption">
+                            <h3>Bed Setup Finished</h3>
+                            <p>Two pieces of plywood 3 quarter inch thick and we're good to go! Cleaning off the dust was clearly not a priority of mine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)"></button>
+            <button class="carousel-btn next" onclick="moveCarousel(1)"></button>
+            
+            <div class="carousel-indicators" id="indicators"></div>
+        </div>
+            <p>I have very little knowledge of what camping in the bed of a truck is going to be like. I figured getting a camper shell would be a good place to start. I dove into the depths of Facebook marketplace and found one! After I got the camper shell, I built out a bed system in the truck bed. I'm the least handy person on the planet but with the help of <a href="https://www.youtube.com/watch?v=WaRvZekpdVs">Youtube</a>, I was able to build a pretty solid setup. </p>
         </div>
     </section>
 
@@ -49,5 +103,6 @@
     </section>
 
     <script type="module" src="app.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
