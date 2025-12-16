@@ -116,6 +116,14 @@
             margin-bottom: 2rem;
             font-weight: 500;
         }
+        
+        .month-content img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+        }
 
         .about-content p,
         .month-content p {
@@ -249,6 +257,9 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                height: 350px;
+            }
 
             .hero-overlay h1 {
                 font-size: 1.8em;
@@ -280,7 +291,6 @@
                 font-size: 1.2em;
             }
         }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
