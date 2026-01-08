@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Tyler's Treks</title>
+        <description>Exploring California's National Parks in 2026</description>
+        <link>https://tylerkaegi.github.io/tylers-treks/</link>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 08 Jan 2026 00:00:00 GMT</lastBuildDate>
+        
+        <item>
+            <title>January 4, 2026 - Badwater Basin &amp; Artist's Palette</title>
+            <description>Wrapped up the trip with a drive down Badwater Road to see Badwater Basin, Lake Manly, and Artist's Palette.</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#january-2026</link>
+            <guid>january-4-2026</guid>
+            <pubDate>Wed, 04 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+        
+        <item>
+            <title>January 3, 2026 - Death Valley Hiking</title>
+            <description>Big hiking day in Death Valley National Park. Explored Mosaic Canyon, Golden Canyon, and Mesquite Flat Sand Dunes.</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#january-2026</link>
+            <guid>january-3-2026</guid>
+            <pubDate>Tue, 03 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+        
+        <item>
+            <title>January 2, 2026 - Stuck in the Mud</title>
+            <description>Oh boy. Buckle up for this one. Got stuck in a mud pit and had to be rescued by American Towing. Made it to Stovepipe Wells eventually.</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#january-2026</link>
+            <guid>january-2-2026</guid>
+            <pubDate>Mon, 02 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+        
+        <item>
+            <title>January 1, 2026 - Trona Pinnacles</title>
+            <description>Happy New Year! Drove out to Trona Pinnacles. Stopped on a random dirt road off Pinnacle Road after dark.</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#january-2026</link>
+            <guid>january-1-2026</guid>
+            <pubDate>Sun, 01 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+        
+        <item>
+            <title>December 13, 2025 - Hole-in-the-Wall Campground</title>
+            <description>Second outing to Essex, CA. Camped near Hole in the Wall Campground and did the Hole in the Wall Rings loop in the morning.</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#december-2025</link>
+            <guid>december-13-2025</guid>
+            <pubDate>Sat, 13 Dec 2025 00:00:00 GMT</pubDate>
+        </item>
+        
+        <item>
+            <title>December 11, 2025 - First Night in Camper</title>
+            <description>The first night in the camper shell! Camped at White Cross World War I Memorial in Nipton, CA. Great trails and plenty of free camping spots.</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#december-2025</link>
+            <guid>december-11-2025</guid>
+            <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+        </item>
+        
+        <item>
+            <title>December 7, 2025 - Truck Setup</title>
+            <description>Set up the camper shell and built out a bed system in the truck bed. Ready to start the California National Parks adventure!</description>
+            <link>https://tylerkaegi.github.io/tylers-treks/#about</link>
+            <guid>december-7-2025</guid>
+            <pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

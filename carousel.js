@@ -2,10 +2,8 @@ const Carousel = (() => {
             const carousels = [];
 
             const createCarousel = (containerId, options = {}) => {
-                console.log(`Creating carousel in container: ${containerId}`);
                 const container = document.getElementById(containerId);
                 if (!container) {
-                    console.error(`Carousel container "${containerId}" not found`);
                     return null;
                 }
 
@@ -13,7 +11,6 @@ const Carousel = (() => {
 
                 let currentIndex = 0;
                 let autoAdvanceInterval;
-                console.log('container:', container);
                 const carousel = container.querySelector('.carousel');
                 const track = carousel.querySelector('.carousel-track');
                 const slides = track.querySelectorAll('.carousel-slide');
