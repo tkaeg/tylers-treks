@@ -5,5 +5,6 @@ const BASE = import.meta.env.VITE_R2_URL || R2_BASE
 
 export function imageUrl(path) {
   if (!path) return ''
-  return `${BASE}/${path}`
+  const webp = path.replace(/\.(jpe?g|JPE?G)$/, '.webp')
+  return `${BASE}/${webp}`
 }
