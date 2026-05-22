@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep mapbox popup text readable against its white background */
+.mapboxgl-popup-content {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
