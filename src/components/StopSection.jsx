@@ -29,7 +29,19 @@ export default function StopSection({ stop }) {
         />
       )}
 
-      {stop.images?.length > 0 && <Carousel images={stop.images} />}
+      {stop.subStops ? (
+        stop.subStops.map(sub => (
+          <div key={sub.id} id={sub.id} className="scroll-mt-16 mb-8">
+            <h3 className="text-base font-semibold text-stone-300 mb-4 flex items-center gap-2">
+              <span className="w-1 h-4 bg-amber-400 rounded-full inline-block" />
+              {sub.name}
+            </h3>
+            {sub.images?.length > 0 && <Carousel images={sub.images} />}
+          </div>
+        ))
+      ) : (
+        stop.images?.length > 0 && <Carousel images={stop.images} />
+      )}
     </article>
   )
 }

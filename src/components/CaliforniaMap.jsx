@@ -28,14 +28,15 @@ export default function CaliforniaMap() {
   const navigate = useNavigate()
   const [popup, setPopup] = useState(null)
 
-  const handleMarkerClick = useCallback((e, stop, trip) => {
+  const handleMarkerClick = useCallback((e, stop, trip, sub) => {
     e.originalEvent?.stopPropagation()
-    setPopup({ stop, trip })
+    setPopup({ stop, trip, sub })
   }, [])
 
   const handleGoToStop = useCallback(() => {
     if (!popup) return
-    navigate(`/${popup.trip.slug}#${popup.stop.id}`)
+    const anchor = popup.sub ? popup.sub.id : popup.stop.id
+    navigate(`/${popup.trip.slug}#${anchor}`)
     setPopup(null)
   }, [popup, navigate])
 
@@ -71,28 +72,48 @@ export default function CaliforniaMap() {
         />
       </Source>
 
-      {/* Stop markers */}
+      {/* Stop markers — one per subStop if present, else one per stop */}
       {trips.flatMap(trip =>
-        trip.stops.map(stop => (
-          <Marker
-            key={`${trip.slug}-${stop.id}`}
-            longitude={stop.coords[0]}
-            latitude={stop.coords[1]}
-            onClick={e => handleMarkerClick(e, stop, trip)}
-          >
-            <div
-              title={stop.location}
-              className="w-4 h-4 rounded-full border-2 border-white shadow-md cursor-pointer hover:scale-125 transition-transform"
-              style={{ backgroundColor: TRIP_COLORS[trip.slug] || '#fff' }}
-            />
-          </Marker>
-        ))
+        trip.stops.flatMap(stop => {
+          if (stop.subStops) {
+            return stop.subStops
+              .filter(sub => sub.coords)
+              .map(sub => (
+                <Marker
+                  key={`${trip.slug}-${sub.id}`}
+                  longitude={sub.coords[0]}
+                  latitude={sub.coords[1]}
+                  onClick={e => handleMarkerClick(e, stop, trip, sub)}
+                >
+                  <div
+                    title={sub.name}
+                    className="w-3 h-3 rounded-full border-2 border-white shadow-md cursor-pointer hover:scale-125 transition-transform"
+                    style={{ backgroundColor: TRIP_COLORS[trip.slug] || '#fff' }}
+                  />
+                </Marker>
+              ))
+          }
+          return [
+            <Marker
+              key={`${trip.slug}-${stop.id}`}
+              longitude={stop.coords[0]}
+              latitude={stop.coords[1]}
+              onClick={e => handleMarkerClick(e, stop, trip, null)}
+            >
+              <div
+                title={stop.location}
+                className="w-4 h-4 rounded-full border-2 border-white shadow-md cursor-pointer hover:scale-125 transition-transform"
+                style={{ backgroundColor: TRIP_COLORS[trip.slug] || '#fff' }}
+              />
+            </Marker>,
+          ]
+        })
       )}
 
       {popup && (
         <Popup
-          longitude={popup.stop.coords[0]}
-          latitude={popup.stop.coords[1]}
+          longitude={popup.sub ? popup.sub.coords[0] : popup.stop.coords[0]}
+          latitude={popup.sub ? popup.sub.coords[1] : popup.stop.coords[1]}
           anchor="bottom"
           offset={14}
           onClose={() => setPopup(null)}
@@ -100,7 +121,9 @@ export default function CaliforniaMap() {
         >
           <div className="min-w-[160px]">
             <p className="font-semibold text-stone-800 text-sm">{popup.stop.date}</p>
-            <p className="text-stone-500 text-xs mb-2">{popup.stop.location}</p>
+            <p className="text-stone-500 text-xs mb-2">
+              {popup.sub ? popup.sub.name : popup.stop.location}
+            </p>
             <button
               onClick={handleGoToStop}
               className="text-amber-600 hover:text-amber-800 text-xs font-medium underline"
