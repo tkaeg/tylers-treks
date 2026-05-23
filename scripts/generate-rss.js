@@ -1,7 +1,13 @@
 // Runs at build time via `npm run build` to generate public/rss.xml from trip data.
 // Update BASE_URL once the site is live on Vercel.
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { trips } from '../src/data/trips.js'
+
+function loadMarkdown(contentKey) {
+  if (!contentKey) return ''
+  const path = `./src/content/${contentKey}.md`
+  return existsSync(path) ? readFileSync(path, 'utf-8') : ''
+}
 
 const BASE_URL = process.env.SITE_URL || 'https://tylerstreks.vercel.app'
 
@@ -21,7 +27,7 @@ const items = trips
   .flatMap(trip =>
     trip.stops.map(stop => {
       const url = `${BASE_URL}/${trip.slug}#${stop.id}`
-      const description = stripHtml(stop.text[0] || '')
+      const description = loadMarkdown(stop.contentKey).split('\n\n')[0] || ''
       return `
   <item>
     <title>${escapeXml(stop.date)} — ${escapeXml(stop.location)}</title>

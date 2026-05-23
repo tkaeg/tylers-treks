@@ -1,0 +1,1 @@
+Wrapped up the trip with a drive down Badwater Road to see [Badwater Basin](https://www.alltrails.com/trail/us/california/badwater-basin-salt-flats-trail), Lake Manly, and [Artist's Palette](https://www.alltrails.com/explore/poi/us/california/death-valley/artists-palette).

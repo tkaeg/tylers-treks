@@ -11,6 +11,8 @@ export const trips = [
     label: 'December 2025',
     month: 'December',
     year: 2025,
+    homePreviewImage: 'images/20251213/IMG_1305.webp',
+    homePreviewAlt: 'Hole-in-the-Wall Campground, Essex, California',
     routes: [
       // Leg 1: LA → Nipton → LA (Dec 11)
       [
@@ -37,10 +39,7 @@ export const trips = [
         coords: [-115.2930, 35.4733],
         coverImage: 'images/20251211/morning_rear_view.jpg',
         coverAlt: 'Morning in Nipton',
-        text: [
-          `The first night in the camper shell! I drove up to Nipton, CA and camped out right next to <a href="https://maps.app.goo.gl/q6prwbHUXk6rEk8L7">White Cross World War I Memorial</a>. The spot was perfect for my first time, plenty of free camping spots and some great trails nearby.`,
-          `For the first time sleeping in the camper, I was decently comfortable. A big miss on my part was not bringing a pillow. I also didn't bring a pump for my sleeping pad. The sleeping bag worked wonderfully though. So much room for improvement but I survived the first time! Only up from here.`,
-        ],
+        contentKey: 'december-2025/nipton',
         images: [
           { src: 'images/20251211/night_setup.jpg', alt: 'Night Setup', caption: 'I swear it was comfier than it looks but will need to get more organized for easier setup.' },
           { src: 'images/20251211/morning_rear_view_setup.jpg', alt: 'Morning Setup', caption: '' },
@@ -56,10 +55,7 @@ export const trips = [
         coords: [-115.4041, 34.7376],
         coverImage: 'images/20251213/morning_setup.jpg',
         coverAlt: 'Morning setup at Essex',
-        text: [
-          `Second outing was definitely lazier in the setup. After getting cleaned out by Vegas, I drove up to Essex, CA and camped out near <a href="https://maps.app.goo.gl/atCuCDzLRG7YN7HE8">Hole in the Wall Campground</a>. By the time I got there, I was cooked so I just laid in my sleeping bag and used my sweatshirts as a pillow.`,
-          `Although the sleeping setup was weaker than the first time, the morning out there was just as beautiful. Woke up and did the Hole in the Wall Rings loop before driving back home.`,
-        ],
+        contentKey: 'december-2025/hole-in-the-wall',
         images: [
           { src: 'images/20251213/IMG_1303.jpg', alt: 'Morning Views Essex', caption: '' },
           { src: 'images/20251213/IMG_1304.jpg', alt: 'Morning Views Essex', caption: '' },
@@ -74,6 +70,8 @@ export const trips = [
     label: 'January 2026',
     month: 'January',
     year: 2026,
+    homePreviewImage: 'images/20260103/golden_canyon.webp',
+    homePreviewAlt: 'Golden Canyon, Death Valley',
     routes: [
       // LA → Trona → Ridgecrest → Stovepipe Wells → Death Valley → Badwater → LA (Jan 1–4)
       [
@@ -97,9 +95,7 @@ export const trips = [
         coords: [-117.3742, 35.7630],
         coverImage: 'images/20260101/trona_night_back.jpg',
         coverAlt: 'Camper at night near Trona Pinnacles',
-        text: [
-          `Happy New Year! Drove out 3 hours around sunset to Trona Pinnacles. I should have left a wee bit earlier as it was tough to navigate in the dark. I stopped about 5 miles short on a random dirt road off of Pinnacle Road. My truck felt the effect of the rain on the dirt roads these past couple weeks.`,
-        ],
+        contentKey: 'january-2026/trona-pinnacles',
         images: [
           { src: 'images/20260101/trona_night_side.jpg', alt: 'Side covered in mud', caption: '' },
           { src: 'images/20260101/trona_night_side_2.jpg', alt: 'Side covered in mud', caption: '' },
@@ -114,13 +110,7 @@ export const trips = [
         coords: [-117.6709, 35.6225],
         coverImage: 'images/20260102/stuck_in_mud_back.jpg',
         coverAlt: 'Stuck in the mud',
-        text: [
-          `Oh boy. Buckle up for this one. Woke up at 6 am because I was worrying about the mud pit I had driven through the night before. I wanted to just get through it as early as possible in case anything went wrong. And in fact, everything went wrong. I tried to be sneaky and cut around the water that I barely made it through the night before and ended up getting stuck in a mud pit. I did everything you aren't supposed to do when you're in mud. I floored it in drive, floored it in reverse, turned my tires every which way. After I had dug myself deeper in the mud pit, I found some wood left by others who had also gotten stuck but were able to get out. I tried shimmying those under my tires and giving it another go. Did it work? Absolutely not.`,
-          `So now it's 7 am. I'm covered head to toe in mud to match my mud covered car. With all my focus on getting out and not even considering the mud I was bringing in, I also managed to dump probably half the desert's supply of mud into the driver's seat. No cell service out there either. But I'm not panicking quite yet. This happens all the time to people. Just gotta wave someone down. And I do, three guys in a mid sized 2WD Honda. I walk over to them knowing that their car will suffer the same fate as mine, if not worse. They think I'm a park ranger which they quickly find out I'm not as I approached them, appearing as if I had been birthed from the mud pit. They were good people and offered to take me to Trona which I swiftly took them up on, hopping in the car with my extra 10 pounds of mud before they could reassess their decision.`,
-          `On the way out, we stop by a jeep and a 70 year old man. He's kind enough to give a try at pulling my car out. No dice. He drove me into Ridgecrest, about 20 miles from where I was stuck. In Ridgecrest, he drops me off at a towing shop. I walk in and as the man sees my mud torn outfit, he recommends a different shop down the road, one made specifically for off road rescues. I'm optimistic. I show the guy the photos, say it's only a mile from the main road. My optimism is crushed and immediately replaced by dread when he replies "nope, it's too risky, probably won't work". So you're telling me the shop known for off road rescues can't rescue my car? I'm cooked.`,
-          `I sit in a McDonalds still dripping mud accepting the fact that I am now a mud person and will live the rest of my days in the mud beside my mud covered truck. I am the mud. I don't know where the mud ends and where I begin. I'm calling every towing company west of the Mississippi until finally, there's one that will do it. <a href="https://www.yelp.com/biz/american-towing-and-recovery-ridgecrest">American Towing</a>, literal angels. They pick me up from McDonalds, the employees celebrating the departure of the mud monster (probably). It takes an hour but the heroes get my truck out of the clutches of the mud. American Towing, thank you thank you thank you. I drive off and take my pavement princess (they coined my truck) to the car wash.`,
-          `So my original plan of having today be the big adventure in Death Valley went a bit different. I made it eventually to Stovepipe Wells and got a campsite (on a real road) and set up shop. My pre-calculated agenda got wrecked and I had to freestyle for a bit. I guess that's the point though — makes for a better story!`,
-        ],
+        contentKey: 'january-2026/mud-pit',
         images: [
           { src: 'images/20260102/stuck_in_mud_back_tire.jpg', alt: 'Stuck in mud back tire', caption: '' },
           { src: 'images/20260102/stuck_in_mud_front_tire.jpg', alt: 'Stuck in mud front tire', caption: '' },
@@ -139,9 +129,7 @@ export const trips = [
         coords: [-116.8703, 36.4169],
         coverImage: 'images/20260103/golden_canyon.jpg',
         coverAlt: 'Golden Canyon',
-        text: [
-          `Today was the big hiking day. First hike of the day was <a href="https://www.alltrails.com/trail/us/california/mosaic-canyon-trail">Mosaic Canyon</a>. Very beautiful, like being on the moon with the black gravel. Second hike was <a href="https://www.alltrails.com/trail/us/california/golden-canyon-trail-and-badlands-loop-to-zabriskie-point">Golden Canyon</a>. This one was the bee's knees. Rock slabs were incredible. The last hike of the day was the <a href="https://www.alltrails.com/trail/us/california/mesquite-flat-sand-dunes-trail">Mesquite Flat Sand Dunes</a> right before sunset.`,
-        ],
+        contentKey: 'january-2026/death-valley-hikes',
         images: [
           { src: 'images/20260103/mosaic_canyon_1.jpg', alt: 'Mosaic Canyon', caption: 'Mosaic Canyon' },
           { src: 'images/20260103/mosaic_canyon_3.jpg', alt: 'Mosaic Canyon', caption: 'Mosaic Canyon' },
@@ -161,9 +149,7 @@ export const trips = [
         coords: [-116.7670, 36.2310],
         coverImage: 'images/20260104/badwater_basin_2.jpg',
         coverAlt: 'Badwater Basin',
-        text: [
-          `Wrapped up the trip with a drive down Badwater Road to see <a href="https://www.alltrails.com/trail/us/california/badwater-basin-salt-flats-trail">Badwater Basin</a>, Lake Manly, and <a href="https://www.alltrails.com/explore/poi/us/california/death-valley/artists-palette">Artist's Palette</a>.`,
-        ],
+        contentKey: 'january-2026/badwater',
         images: [
           { src: 'images/20260104/badwater_basin.jpg', alt: 'Badwater Basin', caption: 'Badwater Basin' },
           { src: 'images/20260104/badwater_basin_1.jpg', alt: 'Badwater Basin', caption: 'Badwater Basin' },
@@ -181,6 +167,8 @@ export const trips = [
     label: 'May 2026',
     month: 'May',
     year: 2026,
+    homePreviewImage: 'images/20260520/james_irvine_fern_canyon_loop_9.webp',
+    homePreviewAlt: 'James Irvine Trail, Prairie Creek Redwoods',
     routes: [
       // Leg 1: LA → Joshua Tree → LA (May 8–9)
       [
@@ -218,7 +206,7 @@ export const trips = [
         coords: [-116.3878, 34.0697],
         coverImage: 'images/20260508/hidden_valley_scramble.jpg',
         coverAlt: 'Hidden Valley Scramble, Joshua Tree',
-        text: [''],
+        contentKey: 'may-2026/black-rock-canyon',
         images: [
           { src: 'images/20260508/hidden_valley_scramble.jpg', alt: 'Hidden Valley Scramble', caption: '' },
           { src: 'images/20260508/hidden_valley_scramble_2.jpg', alt: 'Hidden Valley Scramble', caption: '' },
@@ -235,7 +223,7 @@ export const trips = [
         coords: [-116.1654, 34.0094],
         coverImage: 'images/20260509/chasm_of_doom.jpg',
         coverAlt: 'Chasm of Doom, Joshua Tree',
-        text: [''],
+        contentKey: 'may-2026/hidden-valley',
         images: [
           { src: 'images/20260509/campsite.jpg', alt: 'Campsite', caption: '' },
           { src: 'images/20260509/campsite_2.jpg', alt: 'Campsite', caption: '' },
@@ -260,7 +248,7 @@ export const trips = [
         coords: [-121.4822, 40.4348],
         coverImage: 'images/20260517/sulfur_works.jpg',
         coverAlt: 'Sulfur Works, Lassen Volcanic',
-        text: [''],
+        contentKey: 'may-2026/sulfur-works',
         images: [
           { src: 'images/20260517/lassen_volcanic_entracnce.jpg', alt: 'Lassen Volcanic entrance', caption: '' },
           { src: 'images/20260517/sulfur_works.jpg', alt: 'Sulfur Works', caption: '' },
@@ -282,7 +270,7 @@ export const trips = [
         coords: [-121.2800, 40.3200],
         coverImage: 'images/20260518/mills_creek_falls_1.jpg',
         coverAlt: 'Mill Creek Falls',
-        text: [''],
+        contentKey: 'may-2026/mill-creek-falls',
         images: [
           { src: 'images/20260518/packed_up.jpg', alt: 'Packed up', caption: '' },
           { src: 'images/20260518/bike.jpg', alt: 'Bike', caption: '' },
@@ -314,7 +302,7 @@ export const trips = [
         coords: [-124.0995, 41.7993],
         coverImage: 'images/20260519/grove_of_titans_1.jpg',
         coverAlt: 'Grove of Titans, Jedediah Smith Redwoods',
-        text: [''],
+        contentKey: 'may-2026/stout-grove',
         images: [
           { src: 'images/20260519/camp_setup.jpg', alt: 'Camp setup', caption: '' },
           { src: 'images/20260519/mills_creek_1.jpg', alt: 'Mill Creek', caption: '' },
@@ -344,7 +332,7 @@ export const trips = [
         coords: [-124.0545, 41.3966],
         coverImage: 'images/20260520/james_irvine_fern_canyon_loop_7.jpg',
         coverAlt: 'James Irvine Trail, Prairie Creek Redwoods',
-        text: [''],
+        contentKey: 'may-2026/fern-canyon',
         images: [
           { src: 'images/20260520/breakfast_campsite.jpg', alt: 'Breakfast at campsite', caption: '' },
           { src: 'images/20260520/crescent_beach_overlook_2.jpg', alt: 'Crescent Beach overlook', caption: '' },
@@ -389,7 +377,7 @@ export const trips = [
         coords: [-123.9800, 40.3500],
         coverImage: 'images/20260521/big_tree_1.jpg',
         coverAlt: 'Avenue of Giants',
-        text: [''],
+        contentKey: 'may-2026/avenue-of-giants',
         images: [
           { src: 'images/20260521/ten_taypo-hope_creek_loop.jpg', alt: 'Ten Taypo–Hope Creek Loop', caption: '' },
           { src: 'images/20260521/big_tree_1.jpg', alt: 'Big tree', caption: '' },

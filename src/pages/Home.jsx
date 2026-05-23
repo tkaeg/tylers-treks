@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
           <p className="text-stone-300 text-lg md:text-xl mb-2">California National Parks — 2026</p>
           <p className="text-stone-400 text-sm max-w-xs mx-auto leading-relaxed">
-            Exploring every national park in California, camping out of a truck.
+            Exploring every national park in California.
           </p>
         </div>
       </section>
@@ -59,11 +59,11 @@ export default function Home() {
               to={`/${trip.slug}`}
               className="block bg-stone-900 rounded-xl overflow-hidden border border-stone-800 active:border-amber-500/50 transition-colors group"
             >
-              {trip.stops[0]?.coverImage && (
+              {trip.homePreviewImage && (
                 <div className="w-full aspect-[16/9] bg-stone-800 overflow-hidden">
                   <img
-                    src={imageUrl(trip.stops[0].coverImage)}
-                    alt={trip.label}
+                    src={imageUrl(trip.homePreviewImage)}
+                    alt={trip.homePreviewAlt || trip.label}
                     className="w-full h-full object-cover opacity-0 transition-opacity duration-500"
                     onLoad={e => e.currentTarget.classList.remove('opacity-0')}
                     loading="lazy"

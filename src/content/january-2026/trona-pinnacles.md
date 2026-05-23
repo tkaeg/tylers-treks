@@ -1,0 +1,1 @@
+Happy New Year! Drove out 3 hours around sunset to Trona Pinnacles. I should have left a wee bit earlier as it was tough to navigate in the dark. I stopped about 5 miles short on a random dirt road off of Pinnacle Road. My truck felt the effect of the rain on the dirt roads these past couple weeks.
