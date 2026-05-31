@@ -17,7 +17,7 @@ export default function About() {
       <div className="prose prose-invert prose-amber prose-a:text-amber-400 max-w-none mb-10">
         <p>
           In 2026, I've made a goal of going to all of the national parks in California.
-          I made this site to document my trips.
+          I made this site to document my trips and share my experiences. They're in no way advice as I have no idea what I'm doin. It'll often be filled with random things that happened on the trip that have no relevance to the park itself so feel free to just look at the pictures. I hope you enjoy following along on my adventures
         </p>
       </div>
 

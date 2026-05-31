@@ -131,6 +131,7 @@ export const trips = [
       {
         id: 'death-valley-hikes',
         date: 'January 3, 2026',
+        nationalPark: 'Death Valley National Park',
         location: 'Death Valley National Park, California',
         coords: [-116.8703, 36.4169],
         coverImage: 'images/20260103/golden_canyon.jpg',
@@ -172,6 +173,7 @@ export const trips = [
       {
         id: 'badwater',
         date: 'January 4, 2026',
+        nationalPark: 'Death Valley National Park',
         location: 'Badwater Road, Death Valley National Park, California',
         coords: [-116.7670, 36.2310],
         coverImage: 'images/20260104/badwater_basin_2.jpg',
@@ -222,7 +224,7 @@ export const trips = [
       [
         [-118.24, 34.05],  // LA
         [-116.90, 34.12],  // Hwy 62 / Yucca Valley
-        [-116.39, 34.07],  // Black Rock Canyon
+        [-116.39, 34.07],  // Black Rock Campground
         [-116.17, 34.01],  // Hidden Valley
         [-116.60, 33.90],  // Palm Springs area
         [-118.24, 34.05],  // back to LA
@@ -248,13 +250,14 @@ export const trips = [
     stops: [
       // ── Joshua Tree ──────────────────────────────────────────────
       {
-        id: 'black-rock-canyon',
+        id: 'black-rock-campground',
         date: 'May 8, 2026',
+        nationalPark: 'Joshua Tree National Park',
         location: 'Joshua Tree National Park, California',
         coords: [-116.3878, 34.0697],
         coverImage: 'images/20260508/hidden_valley_scramble.jpg',
         coverAlt: 'Hidden Valley Scramble, Joshua Tree',
-        contentKey: 'may-2026/black-rock-canyon',
+        contentKey: 'may-2026/black-rock-campground',
         subStops: [
           {
             id: 'hidden-valley-scramble',
@@ -265,8 +268,17 @@ export const trips = [
               { src: 'images/20260508/hidden_valley_scramble_2.jpg', alt: 'Hidden Valley Scramble', caption: '' },
               { src: 'images/20260508/hidden_valley_scramble_3.jpg', alt: 'Hidden Valley Scramble', caption: '' },
               { src: 'images/20260508/hidden_valley_scramble_4.jpg', alt: 'Hidden Valley Scramble', caption: '' },
+            ],
+          },
+          {
+            id: 'black-rock-campground',
+            name: 'Black Rock Canyon Campground',
+            coords: [-116.3878, 34.0697],
+            images: [
               { src: 'images/20260508/dinner.jpg', alt: 'Dinner', caption: '' },
-              { src: 'images/20260508/joshua_tree_sticker.jpg', alt: 'Joshua Tree sticker', caption: '' },
+              { src: 'images/20260509/campsite.jpg', alt: 'Campsite', caption: '' },
+              { src: 'images/20260509/campsite_2.jpg', alt: 'Campsite', caption: '' },
+              { src: 'images/20260509/snake.jpg', alt: 'Snake', caption: '' }
             ],
           },
         ],
@@ -274,21 +286,13 @@ export const trips = [
       {
         id: 'hidden-valley',
         date: 'May 9, 2026',
+        nationalPark: 'Joshua Tree National Park',
         location: 'Joshua Tree National Park, California',
         coords: [-116.1654, 34.0094],
         coverImage: 'images/20260509/chasm_of_doom.jpg',
         coverAlt: 'Chasm of Doom, Joshua Tree',
         contentKey: 'may-2026/hidden-valley',
         subStops: [
-          {
-            id: 'black-rock-campground',
-            name: 'Black Rock Canyon Campground',
-            coords: [-116.3878, 34.0697],
-            images: [
-              { src: 'images/20260509/campsite.jpg', alt: 'Campsite', caption: '' },
-              { src: 'images/20260509/campsite_2.jpg', alt: 'Campsite', caption: '' },
-            ],
-          },
           {
             id: 'hidden-valley-trail',
             name: 'Chasm of Doom',
@@ -302,8 +306,7 @@ export const trips = [
               { src: 'images/20260509/chasm_of_doom_6.jpg', alt: 'Chasm of Doom', caption: '' },
               { src: 'images/20260509/chasm_of_doom_7.jpg', alt: 'Chasm of Doom', caption: '' },
               { src: 'images/20260509/chasm_of_doom_8.jpg', alt: 'Chasm of Doom', caption: '' },
-              { src: 'images/20260509/chasm_of_doom_10.jpg', alt: 'Chasm of Doom', caption: '' },
-              { src: 'images/20260509/snake.jpg', alt: 'Snake', caption: '' },
+              { src: 'images/20260509/chasm_of_doom_10.jpg', alt: 'Chasm of Doom', caption: '' }
             ],
           },
         ],
@@ -312,6 +315,7 @@ export const trips = [
       {
         id: 'sulfur-works',
         date: 'May 17, 2026',
+        nationalPark: 'Lassen Volcanic National Park',
         location: 'Lassen Volcanic National Park, California',
         coords: [-121.4822, 40.4348],
         coverImage: 'images/20260517/sulfur_works.jpg',
@@ -327,7 +331,7 @@ export const trips = [
               { src: 'images/20260517/sulfur_works.jpg', alt: 'Sulfur Works', caption: '' },
               { src: 'images/20260517/sulfur_works_2.jpg', alt: 'Sulfur Works', caption: '' },
               { src: 'images/20260517/sulfur_works_3.jpg', alt: 'Sulfur Works', caption: '' },
-              { src: 'images/20260517/lassen_volcanic_sticker.jpg', alt: 'Lassen Volcanic sticker', caption: '' },
+              { src: 'images/20260517/campsite_5.jpg', alt: 'Sulfur Works and Highway 89', caption: '' }
             ],
           },
           {
@@ -339,7 +343,6 @@ export const trips = [
               { src: 'images/20260517/campsite_2.jpg', alt: 'Campsite', caption: '' },
               { src: 'images/20260517/campsite_3.jpg', alt: 'Campsite', caption: '' },
               { src: 'images/20260517/campsite_4.jpg', alt: 'Campsite', caption: '' },
-              { src: 'images/20260517/campsite_5.jpg', alt: 'Campsite', caption: '' },
               { src: 'images/20260517/cookin_ribs.jpg', alt: 'Cooking ribs', caption: '' },
             ],
           },
@@ -348,6 +351,7 @@ export const trips = [
       {
         id: 'mill-creek-falls',
         date: 'May 18, 2026',
+        nationalPark: 'Lassen Volcanic National Park',
         location: 'Lassen Volcanic National Park, California',
         coords: [-121.4822, 40.4348],
         coverImage: 'images/20260518/mills_creek_falls_1.jpg',
@@ -376,7 +380,6 @@ export const trips = [
             name: 'Highway 89 Bike Ride',
             coords: [-121.4500, 40.4600],
             images: [
-              { src: 'images/20260518/packed_up.jpg', alt: 'Packed up', caption: '' },
               { src: 'images/20260518/bike.jpg', alt: 'Bike', caption: '' },
               { src: 'images/20260518/highway_89_bike_1.jpg', alt: 'Highway 89 bike ride', caption: '' },
               { src: 'images/20260518/higway_89_bike_2.jpg', alt: 'Highway 89 bike ride', caption: '' },
@@ -445,6 +448,7 @@ export const trips = [
       {
         id: 'fern-canyon',
         date: 'May 20, 2026',
+        nationalPark: 'Redwood National Park',
         location: 'Prairie Creek Redwoods & Redwood National Park, California',
         coords: [-124.0545, 41.3966],
         coverImage: 'images/20260520/james_irvine_fern_canyon_loop_9.jpg',

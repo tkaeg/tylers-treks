@@ -12,7 +12,7 @@ export default function Home() {
           <img
             src={imageUrl('images/20260103/mosaic_canyon_2.jpg')}
             alt="Mosaic Canyon, Death Valley"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover object-[center_60%] opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-stone-900/50 to-stone-950" />
         </div>
@@ -21,8 +21,9 @@ export default function Home() {
             Tyler's Treks
           </h1>
           <p className="text-stone-300 text-lg md:text-xl mb-2">California National Parks — 2026</p>
-          <p className="text-stone-400 text-sm max-w-xs mx-auto leading-relaxed">
-            Exploring every national park in California.
+          <p className="text-stone-400 text-sm max-w-lg mx-auto leading-relaxed">
+            Exploring every national park in California. In 2026, I've made a goal of going to all of the national parks in California.
+          I made this site to document my trips and share my experiences. They're in no way advice as I have no idea what I'm doin. It'll often be filled with random things that happened on the trip that have no relevance to the park itself so feel free to just look at the pictures. I hope you enjoy following along on my adventures.
           </p>
         </div>
       </section>
@@ -47,6 +48,20 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* National Parks link */}
+      <section className="px-4 pb-6 max-w-5xl mx-auto">
+        <Link
+          to="/national-parks"
+          className="flex items-center justify-between bg-stone-900 rounded-xl border border-stone-800 px-5 py-4 active:border-amber-500/50 transition-colors"
+        >
+          <div>
+            <h2 className="font-semibold text-stone-100 text-base">National Parks</h2>
+            <p className="text-stone-500 text-sm mt-0.5">All park visits in one view</p>
+          </div>
+          <span className="text-amber-400 text-lg">→</span>
+        </Link>
       </section>
 
       {/* Trip cards */}

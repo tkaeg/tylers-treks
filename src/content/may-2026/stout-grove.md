@@ -1,0 +1,5 @@
+Driving from Lassen took about 6 hours, I took the way through Oregon just to say I went to Oregon. I got there earlier than my campsite reservation so I headed over to Stout Grove. From there I hiked up to Grove of the Titans, walking on Howland hill road. The road was an appetizer to the unreal size of these trees, getting to drive through and walk the road was a good precursor to what was in store. 
+
+Grove of Titans was gorgeous, giant redwoods. This entire trip will just be me repeating how gigantic these redwoods are. I took [Mill Creek Trail](https://www.alltrails.com/trail/us/california/mill-creek-trail--6) from Grove of titans back to Stout Grove. This route was one I would definitely take again, you see all the mega trees and then opens up to a really nice creek where you can swim and hang. Stout Grove was a great spot too, like I said: giant trees. The photos don't really capture the sheer size, it's something everyone should see at some point.
+
+For the night I stayed at Jedediah Smith Campground, located right by a beautiful creek and surrounded by redwoods.
