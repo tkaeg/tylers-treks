@@ -1,0 +1,3 @@
+[Mist falls](https://www.alltrails.com/trail/us/california/mist-falls-trail) was the shit! Unbelievable viewpoints of kings canyon and the waterfall was mesmerizing. 8 miles out and back but pretty tame for an unreal waterfall. The drive in was wonderful too, basically takes you things the whole park.
+
+After eating some lunch, I did a small hike to [General Grant trail](https://www.alltrails.com/trail/us/california/general-grant-tree-trail) to the third largest tree (once again by volume). But I won’t get into it to not rile myself up. My uncle was cooking up the best meals I’ve ever eaten on these trips so i definitely spent a lot more time in the campground than i had in the past.

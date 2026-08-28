@@ -566,4 +566,274 @@ export const trips = [
       },
     ],
   },
+  {
+    slug: 'june-2026',
+    label: 'June 2026',
+    month: 'June',
+    year: 2026,
+    homePreviewImage: 'images/20260627/pear_lake_3.webp',
+    homePreviewAlt: 'Pear Lake, Sequoia and Kings National Parks',
+    routes: [
+      // LA → Sequoia & Kings Canyon (based at Grant Grove) → LA (Jun 25–27)
+      [
+        [-118.24, 34.05],  // LA
+        [-118.83, 34.81],  // Grapevine
+        [-119.02, 35.37],  // Bakersfield
+        [-118.74, 36.55],  // Moro Rock / Giant Forest
+        [-118.75, 36.58],  // General Sherman Tree
+        [-118.97, 36.74],  // Grant Grove
+        [-118.58, 36.79],  // Kings Canyon Scenic Byway
+        [-118.55, 36.81],  // Mist Falls / Road's End
+        [-118.97, 36.74],  // back to Grant Grove
+        [-118.67, 36.60],  // Pear Lake (Wolverton)
+        [-118.98, 36.75],  // North Grove Loop
+        [-119.02, 35.37],  // Bakersfield
+        [-118.24, 34.05],  // back to LA
+      ],
+    ],
+    stops: [
+      {
+        id: 'moro-rock',
+        date: 'June 25, 2026',
+        nationalPark: 'Sequoia and Kings National Parks',
+        location: 'Sequoia and Kings National Parks, California',
+        coords: [-118.7514, 36.5816],
+        coverImage: 'images/20260625/moro_rock_1.jpg',
+        coverAlt: 'Moro Rock, Sequoia',
+        contentKey: 'june-2026/moro-rock',
+        subStops: [
+          {
+            id: 'moro-rock-trail',
+            name: 'Moro Rock',
+            coords: [-118.7656, 36.5466],
+            images: [
+              { src: 'images/20260625/moro_rock_1.jpg', alt: 'Moro Rock', caption: '' },
+              { src: 'images/20260625/moro_rock_2.jpg', alt: 'Moro Rock', caption: '' },
+              { src: 'images/20260625/moro_rock_3.jpg', alt: 'Moro Rock', caption: '' },
+              { src: 'images/20260625/moro_rock_4.jpg', alt: 'Moro Rock', caption: '' },
+              { src: 'images/20260625/moro_rock_5.jpg', alt: 'Moro Rock', caption: '' },
+              { src: 'images/20260625/moro_rock_6.jpg', alt: 'Moro Rock', caption: '' },
+            ],
+          },
+          {
+            id: 'congress-trail',
+            name: 'Congress Trail & General Sherman Tree',
+            coords: [-118.7514, 36.5816],
+            images: [
+              { src: 'images/20260625/congress_trail_1.jpg', alt: 'Congress Trail', caption: '' },
+              { src: 'images/20260625/congress_trail_2.jpg', alt: 'Congress Trail', caption: '' },
+              { src: 'images/20260625/congress_trail_3.jpg', alt: 'Congress Trail', caption: '' },
+              { src: 'images/20260625/congress_trail_4.jpg', alt: 'Congress Trail', caption: '' },
+              { src: 'images/20260625/congress_trail_5.jpg', alt: 'Congress Trail', caption: '' },
+              { src: 'images/20260625/congress_trail_6.jpg', alt: 'Congress Trail', caption: '' },
+              { src: 'images/20260625/general_sherman_tree_1.jpg', alt: 'General Sherman Tree', caption: '' },
+              { src: 'images/20260625/general_sherman_tree_2.jpg', alt: 'General Sherman Tree', caption: '' },
+            ],
+          },
+          {
+            id: 'big-baldy',
+            name: 'Big Baldy',
+            coords: [-118.9666, 36.7354],
+            images: [
+              { src: 'images/20260625/big_baldy_1.jpg', alt: 'Big Baldy', caption: '' },
+              { src: 'images/20260625/big_baldy_2.jpg', alt: 'Big Baldy', caption: '' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'mist-falls',
+        date: 'June 26, 2026',
+        nationalPark: 'Sequoia and Kings National Parks',
+        location: 'Kings Canyon, Sequoia and Kings National Parks, California',
+        coords: [-118.5490, 36.8134],
+        coverImage: 'images/20260626/mist_falls_1.jpg',
+        coverAlt: 'Mist Falls, Kings Canyon',
+        contentKey: 'june-2026/mist-falls',
+        subStops: [
+          {
+            id: 'mist-falls-trail',
+            name: 'Mist Falls',
+            coords: [-118.5490, 36.8134],
+            images: [
+              { src: 'images/20260626/mist_falls_drive_1.jpg', alt: 'Kings Canyon Scenic Byway', caption: '' },
+              { src: 'images/20260626/mist_falls_1.jpg', alt: 'Mist Falls', caption: '' },
+              { src: 'images/20260626/mist_falls_2.jpg', alt: 'Mist Falls', caption: '' },
+              { src: 'images/20260626/mist_falls_3.jpg', alt: 'Mist Falls', caption: '' },
+              { src: 'images/20260626/mist_falls_4.mov', alt: 'Mist Falls', caption: '' },
+              { src: 'images/20260626/mist_falls_5.mov', alt: 'Mist Falls', caption: '' },
+              { src: 'images/20260626/mist_falls_6.jpg', alt: 'Mist Falls', caption: '' },
+            ],
+          },
+          {
+            id: 'general-grant-tree',
+            name: 'General Grant Tree',
+            coords: [-118.9714, 36.7477],
+            images: [
+              { src: 'images/20260626/general_grant_tree_1.jpg', alt: 'General Grant Tree', caption: '' },
+              { src: 'images/20260626/general_grant_tree_2.jpg', alt: 'General Grant Tree', caption: '' },
+              { src: 'images/20260626/general_grant_tree_3.jpg', alt: 'General Grant Tree', caption: '' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'pear-lake',
+        date: 'June 27, 2026',
+        nationalPark: 'Sequoia and Kings National Parks',
+        location: 'Sequoia and Kings National Parks, California',
+        coords: [-118.6669, 36.6033],
+        coverImage: 'images/20260627/pear_lake_3.jpg',
+        coverAlt: 'Pear Lake, Sequoia',
+        contentKey: 'june-2026/pear-lake',
+        subStops: [
+          {
+            id: 'pear-lake-trail',
+            name: 'Pear Lake',
+            coords: [-118.6669, 36.6033],
+            images: [
+              { src: 'images/20260627/pear_lake_1.jpg', alt: 'Pear Lake', caption: '' },
+              { src: 'images/20260627/pear_lake_2.jpg', alt: 'Pear Lake', caption: '' },
+              { src: 'images/20260627/pear_lake_3.jpg', alt: 'Pear Lake', caption: '' },
+              { src: 'images/20260627/pear_lake_4.jpg', alt: 'Pear Lake', caption: '' },
+              { src: 'images/20260627/pear_lake_5.jpg', alt: 'Pear Lake', caption: '' },
+              { src: 'images/20260627/pear_lake_6.jpg', alt: 'Pear Lake', caption: '' },
+              { src: 'images/20260627/pear_lake_7.mov', alt: 'Pear Lake', caption: '' },
+            ],
+          },
+          {
+            id: 'watchtower-trail',
+            name: 'Watchtower Trail',
+            coords: [-118.6991, 36.6066],
+            images: [
+              { src: 'images/20260627/watchtower_trail_1.mov', alt: 'Watchtower Trail', caption: '' },
+              { src: 'images/20260627/watchtower_trail_2.jpg', alt: 'Watchtower Trail', caption: '' },
+            ],
+          },
+          {
+            id: 'north-grove-loop',
+            name: 'North Grove Loop',
+            coords: [-118.9820, 36.7510],
+            images: [
+              { src: 'images/20260627/north_grove_loop_1.jpg', alt: 'North Grove Loop', caption: '' },
+              { src: 'images/20260627/north_grove_loop_2.jpg', alt: 'North Grove Loop', caption: '' },
+              { src: 'images/20260627/north_grove_loop_3.jpg', alt: 'North Grove Loop', caption: '' },
+              { src: 'images/20260627/north_grove_loop_4.jpg', alt: 'North Grove Loop', caption: '' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'august-2026',
+    label: 'August 2026',
+    month: 'August',
+    year: 2026,
+    homePreviewImage: 'images/20260822/bear_gulch_8.webp',
+    homePreviewAlt: 'Bear Gulch, Pinnacles National Park',
+    routes: [
+      // LA → Pinnacles National Park (east entrance) → LA (Aug 22)
+      [
+        [-118.24, 34.05],  // LA
+        [-118.83, 34.81],  // Grapevine
+        [-119.70, 35.28],  // Central Valley
+        [-120.66, 35.62],  // Paso Robles
+        [-121.02, 36.25],  // King City
+        [-121.15, 36.49],  // Pinnacles Campground (east side)
+        [-121.18, 36.48],  // Bear Gulch
+        [-121.20, 36.50],  // Balconies
+        [-121.15, 36.49],  // back to campground
+        [-120.66, 35.62],  // Paso Robles
+        [-118.24, 34.05],  // back to LA
+      ],
+    ],
+    stops: [
+      {
+        id: 'pinnacles',
+        date: 'August 22, 2026',
+        nationalPark: 'Pinnacles National Park',
+        location: 'Pinnacles National Park, California',
+        coords: [-121.1840, 36.4778],
+        coverImage: 'images/20260822/bear_gulch_8.jpg',
+        coverAlt: 'Bear Gulch, Pinnacles National Park',
+        contentKey: 'august-2026/pinnacles',
+        subStops: [
+          {
+            id: 'balconies-caves',
+            name: 'Balconies Cliffs & Caves',
+            coords: [-121.2020, 36.4996],
+            images: [
+              { src: 'images/20260822/balconies_caves_1.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_2.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_3.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_4.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_5.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_6.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_7.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_8.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_9.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_10.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_11.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_12.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_13.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_14.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_15.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_16.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_17.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_18.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_19.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+              { src: 'images/20260822/balconies_caves_20.jpg', alt: 'Balconies Cliffs and Caves', caption: '' },
+            ],
+          },
+          {
+            id: 'bear-gulch',
+            name: 'Bear Gulch Reservoir, Caves & Rim Route',
+            coords: [-121.1840, 36.4778],
+            images: [
+              { src: 'images/20260822/bear_gulch_1.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_2.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_3.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_4.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_5.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_6.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_7.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_8.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_9.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_10.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_11.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_12.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_13.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_14.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_15.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_16.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_17.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_18.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_19.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_20.jpg', alt: 'Bear Gulch', caption: '' },
+              { src: 'images/20260822/bear_gulch_21.jpg', alt: 'Bear Gulch', caption: '' },
+            ],
+          },
+          {
+            id: 'pinnacles-campground',
+            name: 'Pinnacles Campground',
+            coords: [-121.1476, 36.4925],
+            images: [
+              { src: 'images/20260822/pinnacles_campground_1.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_2.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_3.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_4.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_5.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_6.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_7.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_8.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_9.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_10.jpg', alt: 'Pinnacles Campground', caption: '' },
+              { src: 'images/20260822/pinnacles_campground_11.jpg', alt: 'Pinnacles Campground', caption: '' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ]
