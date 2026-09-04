@@ -15,7 +15,7 @@ export default function StopSection({ stop }) {
           <img
             src={imageUrl(stop.coverImage)}
             alt={stop.coverAlt}
-            className="w-full h-full object-cover opacity-0 transition-opacity duration-500"
+            className="w-full h-full object-contain opacity-0 transition-opacity duration-500"
             onLoad={e => e.currentTarget.classList.remove('opacity-0')}
             loading="lazy"
           />
