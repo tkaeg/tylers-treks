@@ -166,9 +166,23 @@ comm -23 /tmp/refs.txt /tmp/actual.txt   # must be empty (nothing missing)
 
 ## Step 9 — Upload media to R2
 
-The new `images/YYYYMMDD/` folders must be uploaded to the Cloudflare R2 bucket
-by Tyler (same folder layout). This step is manual — tell Tyler which folders to
-upload. Afterwards verify:
+Uploaded via the API, not the dashboard — `scripts/r2-upload.js` (needs
+write-scoped `R2_*` vars in `.env`; see `.env.example` and the README's R2
+section). Preview first, then upload:
+
+```bash
+npm run r2:upload -- --dry-run images/YYYYMMDD           # lists keys, no credentials needed
+npm run r2:upload -- images/YYYYMMDD [images/YYYYMMDD ...]
+```
+
+If you renamed/removed a file this run (a mislabeled photo, etc.), delete the
+stale key too:
+
+```bash
+npm run r2:delete -- images/YYYYMMDD/old_name.webp
+```
+
+Then verify every referenced file is actually live:
 
 ```bash
 BASE=$(grep VITE_R2_URL .env | cut -d= -f2)
@@ -178,7 +192,8 @@ while read -r f; do
 done < <(cd images && find . -type f | sed 's|^\./|images/|')
 ```
 
-No output = every file is live.
+No output = every file is live. If `R2_*` credentials aren't set up yet, fall
+back to telling Tyler which folders to drag into the R2 dashboard manually.
 
 ## Step 10 — Review branch
 
