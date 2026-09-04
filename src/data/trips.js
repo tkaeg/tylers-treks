@@ -598,16 +598,23 @@ export const trips = [
         nationalPark: 'Sequoia and Kings National Parks',
         location: 'Sequoia and Kings National Parks, California',
         coords: [-118.7514, 36.5816],
-        coverImage: 'images/20260625/moro_rock_1.jpg',
-        coverAlt: 'Moro Rock, Sequoia',
+        coverImage: 'images/20260625/tunnel_log_1.jpg',
+        coverAlt: 'Tunnel Log, Sequoia',
         contentKey: 'june-2026/moro-rock',
         subStops: [
+          {
+            id: 'tunnel-log',
+            name: 'Tunnel Log',
+            coords: [-118.76141, 36.55251],
+            images: [
+              { src: 'images/20260625/tunnel_log_1.jpg', alt: 'Tunnel Log', caption: '' },
+            ],
+          },
           {
             id: 'moro-rock-trail',
             name: 'Moro Rock',
             coords: [-118.7656, 36.5466],
             images: [
-              { src: 'images/20260625/moro_rock_1.jpg', alt: 'Moro Rock', caption: '' },
               { src: 'images/20260625/moro_rock_2.jpg', alt: 'Moro Rock', caption: '' },
               { src: 'images/20260625/moro_rock_3.jpg', alt: 'Moro Rock', caption: '' },
               { src: 'images/20260625/moro_rock_4.jpg', alt: 'Moro Rock', caption: '' },
@@ -631,12 +638,12 @@ export const trips = [
             ],
           },
           {
-            id: 'big-baldy',
-            name: 'Big Baldy',
+            id: 'campground',
+            name: 'Campground',
             coords: [-118.9666, 36.7354],
             images: [
-              { src: 'images/20260625/big_baldy_1.jpg', alt: 'Big Baldy', caption: '' },
-              { src: 'images/20260625/big_baldy_2.jpg', alt: 'Big Baldy', caption: '' },
+              { src: 'images/20260625/campground_1.jpg', alt: 'Campground', caption: '' },
+              { src: 'images/20260625/campground_2.jpg', alt: 'Campground', caption: '' },
             ],
           },
         ],
