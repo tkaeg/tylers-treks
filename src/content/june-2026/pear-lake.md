@@ -1,3 +1,5 @@
 Big hike this morning. [Pear Lake](https://www.alltrails.com/trail/us/california/the-lakes-trail-to-pear-lake) in Sequoia. 13 miles, 3K elevation. The first 3 miles accounted for 2K of the elevation but after that, it was pretty smooth sailing. It was lakes and marmots galore. After the initial jump, you walk along the heather and emerald lakes and after a bit of a climb, you get spit out by Pear lake. Pear lake was spectacular. A beautiful lake enclosed in massive peaks. Marmots running buck wild. Super secluded as well, a great spot to stop and relax. Hike back down i took watchtower trail which takes you cliff side with incredible views.
 
 Around sunset I did the [north grove loop](https://www.alltrails.com/trail/us/california/north-grove-loop) in Kings. I was the only one on the trail which was peaceful except that my uncle had gotten into my head that i should always carry bear mace (which i did not).
+
+I was sleeping on Kings Canyon, i was blown away by the beauty. I thought I would spend most of my time in Sequoia but I ended up splitting it pretty evenly and will definitely want to get up there again to explore Kings more.
