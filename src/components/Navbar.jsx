@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const tripLinks = [
+  { to: '/august-2026', label: 'August 2026' },
+  { to: '/june-2026', label: 'June 2026' },
   { to: '/may-2026', label: 'May 2026' },
   { to: '/january-2026', label: 'January 2026' },
   { to: '/december-2025', label: 'December 2025' },
@@ -95,6 +97,15 @@ export default function Navbar() {
               )}
             </div>
 
+            <a
+              href="https://www.alltrails.com/members/tyler-kaegi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-stone-400 hover:text-stone-100 transition-colors"
+            >
+              AllTrails
+            </a>
+
             <a href="/rss.xml" className="text-sm text-stone-400 hover:text-stone-100 transition-colors">
               RSS
             </a>
@@ -159,6 +170,16 @@ export default function Navbar() {
                 ))}
               </div>
             )}
+
+            <a
+              href="https://www.alltrails.com/members/tyler-kaegi"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeAll}
+              className="flex items-center px-5 h-14 text-base border-b border-stone-800 text-stone-300 active:bg-stone-900 transition-colors"
+            >
+              AllTrails
+            </a>
 
             <a
               href="/rss.xml"

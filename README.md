@@ -31,6 +31,25 @@ VITE_R2_URL=...
 npm run build   # generates rss.xml then bundles with Vite
 ```
 
+## Uploading media to R2
+
+New trip photos/videos are converted locally into `images/YYYYMMDD/` (see the
+`add-trip` skill), then pushed to the R2 bucket via the API — no manual
+dashboard upload needed:
+
+```bash
+npm run r2:upload -- images/20260625 images/20260822   # upload folder(s) or file(s)
+npm run r2:upload -- --dry-run images/                 # preview keys, no credentials needed
+npm run r2:delete -- images/20260625/old_name.webp      # clean up after a rename
+```
+
+Requires a **separate, write-scoped** R2 API token (`R2_ACCOUNT_ID`,
+`R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET_NAME` in `.env` — see
+`.env.example`). This is different from `VITE_R2_URL`, which is just the
+public read URL the site fetches images from. Create the token at Cloudflare
+dashboard → R2 → **Manage R2 API Tokens** → Create API Token, with **Object
+Read & Write** permission scoped to this bucket.
+
 ## Project Structure
 
 ```
@@ -40,7 +59,7 @@ src/
   components/  # shared UI: carousel, image grid, map
   hooks/       # custom React hooks
 images/        # local images organized by date (YYYYMMDD/)
-scripts/       # generate-rss.js
+scripts/       # generate-rss.js, r2-upload.js, r2-delete.js, r2-client.js
 public/        # static assets
 ```
 

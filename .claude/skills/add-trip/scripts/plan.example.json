@@ -1,0 +1,19 @@
+{
+  "source_dirs": ["/tmp/scratch/extract"],
+  "out_root": "images",
+  "max_edge": 2560,
+  "webp_quality": 80,
+  "groups": {
+    "20260625": {
+      "IMG_3082": "moro_rock_1",
+      "IMG_3091": "moro_rock_2",
+      "IMG_3187": "general_sherman_tree_1",
+      "IMG_3236": "big_baldy_1"
+    },
+    "20260626": {
+      "IMG_3279": "mist_falls_1",
+      "IMG_3305": "mist_falls_4",
+      "IMG_3337": "general_grant_tree_1"
+    }
+  }
+}

@@ -72,7 +72,7 @@ export default function Carousel({ images }) {
         <MediaItem
           src={resolvedSrc}
           alt={image.alt}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
         {image.caption && (
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-4 py-3">

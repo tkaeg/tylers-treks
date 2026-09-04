@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import Map, { Source, Layer, Marker, Popup, NavigationControl } from 'react-map-gl'
 import { useNavigate } from 'react-router-dom'
 import { trips } from '../data/trips'
@@ -9,6 +9,8 @@ const TRIP_COLORS = {
   'december-2025': '#f59e0b', // amber
   'january-2026':  '#60a5fa', // blue-400
   'may-2026':      '#34d399', // emerald-400
+  'june-2026':     '#a78bfa', // violet-400
+  'august-2026':   '#f472b6', // pink-400
 }
 
 // Each trip has routes: an array of coordinate arrays (one per driving leg).
@@ -24,9 +26,39 @@ const routeGeoJSON = {
   ),
 }
 
+// Bounding box over every route waypoint across every trip, so the map
+// always frames the full extent driven so far — new trips (further north,
+// further south, ...) never get silently clipped by a stale hardcoded view.
+const ALL_ROUTE_COORDS = trips.flatMap(trip => trip.routes.flat())
+const ROUTE_BOUNDS = ALL_ROUTE_COORDS.reduce(
+  (b, [lng, lat]) => ({
+    minLng: Math.min(b.minLng, lng),
+    minLat: Math.min(b.minLat, lat),
+    maxLng: Math.max(b.maxLng, lng),
+    maxLat: Math.max(b.maxLat, lat),
+  }),
+  { minLng: Infinity, minLat: Infinity, maxLng: -Infinity, maxLat: -Infinity }
+)
+const INITIAL_VIEW_STATE = {
+  longitude: (ROUTE_BOUNDS.minLng + ROUTE_BOUNDS.maxLng) / 2,
+  latitude: (ROUTE_BOUNDS.minLat + ROUTE_BOUNDS.maxLat) / 2,
+  zoom: 5.5,
+}
+
 export default function CaliforniaMap() {
   const navigate = useNavigate()
+  const mapRef = useRef(null)
   const [popup, setPopup] = useState(null)
+
+  const handleLoad = useCallback(() => {
+    mapRef.current?.fitBounds(
+      [
+        [ROUTE_BOUNDS.minLng, ROUTE_BOUNDS.minLat],
+        [ROUTE_BOUNDS.maxLng, ROUTE_BOUNDS.maxLat],
+      ],
+      { padding: 40, duration: 0 }
+    )
+  }, [])
 
   const handleMarkerClick = useCallback((e, stop, trip, sub) => {
     e.originalEvent?.stopPropagation()
@@ -51,7 +83,9 @@ export default function CaliforniaMap() {
 
   return (
     <Map
-      initialViewState={{ longitude: -119.5, latitude: 37.5, zoom: 5.5 }}
+      ref={mapRef}
+      initialViewState={INITIAL_VIEW_STATE}
+      onLoad={handleLoad}
       style={{ width: '100%', height: '100%' }}
       mapStyle="mapbox://styles/mapbox/outdoors-v12"
       mapboxAccessToken={TOKEN}
