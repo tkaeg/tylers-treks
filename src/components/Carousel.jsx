@@ -65,7 +65,7 @@ export default function Carousel({ images }) {
   return (
     <div className="relative w-full select-none">
       <div
-        className="relative aspect-[4/3] md:aspect-video bg-stone-800 overflow-hidden rounded-lg touch-pan-y"
+        className="relative aspect-[4/3] md:aspect-video bg-card overflow-hidden rounded-lg touch-pan-y"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -105,7 +105,7 @@ export default function Carousel({ images }) {
                 className="w-8 h-8 flex items-center justify-center"
                 aria-label={`Go to ${i + 1}`}
               >
-                <span className={`block w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-amber-400' : 'bg-stone-600'}`} />
+                <span className={`block w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-accent' : 'bg-line'}`} />
               </button>
             ))}
           </div>

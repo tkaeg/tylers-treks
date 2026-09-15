@@ -47,9 +47,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-stone-950/95 backdrop-blur-sm border-b border-stone-800">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-paper/95 backdrop-blur-sm border-b border-line">
         <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
-          <Link to="/" className="font-bold text-amber-400 text-lg tracking-tight" onClick={closeAll}>
+          <Link to="/" className="font-bold text-accent text-lg tracking-tight" onClick={closeAll}>
             Tyler's Treks
           </Link>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
                 end={link.to === '/'}
                 onClick={closeAll}
                 className={({ isActive }) =>
-                  `text-sm transition-colors ${isActive ? 'text-amber-400' : 'text-stone-400 hover:text-stone-100'}`
+                  `text-sm transition-colors ${isActive ? 'text-accent' : 'text-muted hover:text-ink'}`
                 }
               >
                 {link.label}
@@ -73,13 +73,13 @@ export default function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setTripsOpen(o => !o)}
-                className="flex items-center gap-1 text-sm text-stone-400 hover:text-stone-100 transition-colors"
+                className="flex items-center gap-1 text-sm text-muted hover:text-ink transition-colors"
               >
                 Trips
                 <span className={`text-xs transition-transform duration-200 ${tripsOpen ? 'rotate-180' : ''}`}>▾</span>
               </button>
               {tripsOpen && (
-                <div className="absolute right-0 top-full mt-2 w-44 bg-stone-900 border border-stone-700 rounded-lg shadow-xl overflow-hidden">
+                <div className="absolute right-0 top-full mt-2 w-44 bg-card border border-line rounded-lg shadow-xl overflow-hidden">
                   {tripLinks.map(link => (
                     <NavLink
                       key={link.to}
@@ -87,7 +87,7 @@ export default function Navbar() {
                       onClick={closeAll}
                       className={({ isActive }) =>
                         `flex items-center px-4 h-11 text-sm transition-colors ${
-                          isActive ? 'text-amber-400 bg-stone-800' : 'text-stone-300 hover:bg-stone-800 hover:text-stone-100'
+                          isActive ? 'text-accent bg-line' : 'text-ink hover:bg-line hover:text-ink'
                         }`
                       }
                     >
@@ -102,19 +102,19 @@ export default function Navbar() {
               href="https://www.alltrails.com/members/tyler-kaegi"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-stone-400 hover:text-stone-100 transition-colors"
+              className="text-sm text-muted hover:text-ink transition-colors"
             >
               AllTrails
             </a>
 
-            <a href="/rss.xml" className="text-sm text-stone-400 hover:text-stone-100 transition-colors">
+            <a href="/rss.xml" className="text-sm text-muted hover:text-ink transition-colors">
               RSS
             </a>
           </div>
 
           {/* Hamburger */}
           <button
-            className="md:hidden w-11 h-11 flex items-center justify-center text-stone-400 active:text-stone-100 transition-colors"
+            className="md:hidden w-11 h-11 flex items-center justify-center text-muted active:text-ink transition-colors"
             onClick={() => setMenuOpen(o => !o)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
@@ -128,7 +128,7 @@ export default function Navbar() {
       {menuOpen && (
         <>
           <div className="fixed inset-0 z-40 bg-black/60" onClick={closeAll} aria-hidden />
-          <div className="fixed top-14 left-0 right-0 z-40 bg-stone-950 border-b border-stone-800 shadow-xl">
+          <div className="fixed top-14 left-0 right-0 z-40 bg-paper border-b border-line shadow-xl">
             {topLinks.map(link => (
               <NavLink
                 key={link.to}
@@ -136,8 +136,8 @@ export default function Navbar() {
                 end={link.to === '/'}
                 onClick={closeAll}
                 className={({ isActive }) =>
-                  `flex items-center px-5 h-14 text-base border-b border-stone-800 transition-colors ${
-                    isActive ? 'text-amber-400 bg-stone-900' : 'text-stone-300 active:bg-stone-900'
+                  `flex items-center px-5 h-14 text-base border-b border-line transition-colors ${
+                    isActive ? 'text-accent bg-card' : 'text-ink active:bg-card'
                   }`
                 }
               >
@@ -148,21 +148,21 @@ export default function Navbar() {
             {/* Mobile Trips accordion */}
             <button
               onClick={() => setMobileTripsOpen(o => !o)}
-              className="flex items-center justify-between w-full px-5 h-14 text-base text-stone-300 border-b border-stone-800 active:bg-stone-900 transition-colors"
+              className="flex items-center justify-between w-full px-5 h-14 text-base text-ink border-b border-line active:bg-card transition-colors"
             >
               Trips
-              <span className={`text-xs text-stone-500 transition-transform duration-200 ${mobileTripsOpen ? 'rotate-180' : ''}`}>▾</span>
+              <span className={`text-xs text-muted transition-transform duration-200 ${mobileTripsOpen ? 'rotate-180' : ''}`}>▾</span>
             </button>
             {mobileTripsOpen && (
-              <div className="bg-stone-900/60">
+              <div className="bg-card/60">
                 {tripLinks.map(link => (
                   <NavLink
                     key={link.to}
                     to={link.to}
                     onClick={closeAll}
                     className={({ isActive }) =>
-                      `flex items-center pl-9 pr-5 h-12 text-sm border-b border-stone-800/60 transition-colors ${
-                        isActive ? 'text-amber-400' : 'text-stone-400 active:text-stone-100'
+                      `flex items-center pl-9 pr-5 h-12 text-sm border-b border-line/60 transition-colors ${
+                        isActive ? 'text-accent' : 'text-muted active:text-ink'
                       }`
                     }
                   >
@@ -177,14 +177,14 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeAll}
-              className="flex items-center px-5 h-14 text-base border-b border-stone-800 text-stone-300 active:bg-stone-900 transition-colors"
+              className="flex items-center px-5 h-14 text-base border-b border-line text-ink active:bg-card transition-colors"
             >
               AllTrails
             </a>
 
             <a
               href="/rss.xml"
-              className="flex items-center px-5 h-14 text-base text-stone-300 active:bg-stone-900 transition-colors"
+              className="flex items-center px-5 h-14 text-base text-ink active:bg-card transition-colors"
             >
               RSS
             </a>

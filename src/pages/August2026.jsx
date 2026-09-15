@@ -9,8 +9,8 @@ export default function August2026() {
 
   return (
     <main className="pt-20 pb-16 max-w-2xl mx-auto px-4 md:px-6">
-      <h1 className="text-3xl font-bold text-amber-400 mb-1">{trip.label}</h1>
-      <p className="text-stone-500 text-sm mb-10">{trip.stops.length} stops</p>
+      <h1 className="text-3xl font-bold text-accent mb-1">{trip.label}</h1>
+      <p className="text-muted text-sm mb-10">{trip.stops.length} stops</p>
       {trip.stops.map(stop => (
         <StopSection key={stop.id} stop={stop} />
       ))}

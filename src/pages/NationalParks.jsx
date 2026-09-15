@@ -20,12 +20,12 @@ export default function NationalParks() {
 
   return (
     <main className="pt-20 pb-16 max-w-2xl mx-auto px-4 md:px-6">
-      <h1 className="text-3xl font-bold text-amber-400 mb-1">National Parks</h1>
-      <p className="text-stone-500 text-sm mb-10">{parks.length} parks visited</p>
+      <h1 className="text-3xl font-bold text-accent mb-1">National Parks</h1>
+      <p className="text-muted text-sm mb-10">{parks.length} parks visited</p>
 
       {parks.map(([parkName, stops]) => (
         <section key={parkName} className="mb-16">
-          <h2 className="text-xl font-semibold text-stone-100 mb-8 pb-2 border-b border-stone-700">
+          <h2 className="text-xl font-semibold text-ink mb-8 pb-2 border-b border-line">
             {parkName}
           </h2>
           {stops.map(stop => (

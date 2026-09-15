@@ -75,9 +75,9 @@ export default function CaliforniaMap() {
 
   if (!TOKEN) {
     return (
-      <div className="w-full h-full bg-stone-900 flex flex-col items-center justify-center gap-2 rounded-lg">
-        <p className="text-stone-400 text-sm">Map requires a Mapbox token.</p>
-        <p className="text-stone-500 text-xs">Add <code className="text-amber-400">VITE_MAPBOX_TOKEN</code> to your <code className="text-amber-400">.env</code> file.</p>
+      <div className="w-full h-full bg-card flex flex-col items-center justify-center gap-2 rounded-lg">
+        <p className="text-muted text-sm">Map requires a Mapbox token.</p>
+        <p className="text-muted text-xs">Add <code className="text-accent">VITE_MAPBOX_TOKEN</code> to your <code className="text-accent">.env</code> file.</p>
       </div>
     )
   }
@@ -155,13 +155,13 @@ export default function CaliforniaMap() {
           closeButton
         >
           <div className="min-w-[160px]">
-            <p className="font-semibold text-stone-800 text-sm">{popup.stop.date}</p>
-            <p className="text-stone-500 text-xs mb-2">
+            <p className="font-semibold text-ink text-sm">{popup.stop.date}</p>
+            <p className="text-muted text-xs mb-2">
               {popup.sub ? popup.sub.name : popup.stop.location}
             </p>
             <button
               onClick={handleGoToStop}
-              className="text-amber-600 hover:text-amber-800 text-xs font-medium underline"
+              className="text-accent hover:text-accent-dark text-xs font-medium underline"
             >
               Read more →
             </button>

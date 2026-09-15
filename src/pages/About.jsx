@@ -12,23 +12,23 @@ const setupImages = [
 export default function About() {
   return (
     <main className="pt-20 pb-16 max-w-2xl mx-auto px-4 md:px-6">
-      <h1 className="text-3xl font-bold text-amber-400 mb-6">About Tyler's Treks</h1>
+      <h1 className="text-3xl font-bold text-accent mb-6">About Tyler's Treks</h1>
 
-      <div className="prose prose-invert prose-amber prose-a:text-amber-400 max-w-none mb-10">
+      <div className="prose prose-amber prose-a:text-accent max-w-none mb-10">
         <p>
           In 2026, I've made a goal of going to all of the national parks in California.
           I made this site to document my trips and share my experiences. They're in no way advice as I have no idea what I'm doin. It'll often be filled with random things that happened on the trip that have no relevance to the park itself so feel free to just look at the pictures. I hope you enjoy following along on my adventures
         </p>
       </div>
 
-      <h2 className="text-2xl font-semibold text-stone-100 mb-1">December 7, 2025 — Truck Setup</h2>
-      <p className="text-stone-500 text-sm mb-5">Building out the camper shell before the first trip.</p>
+      <h2 className="text-2xl font-semibold text-ink mb-1">December 7, 2025 — Truck Setup</h2>
+      <p className="text-muted text-sm mb-5">Building out the camper shell before the first trip.</p>
 
       <div className="mb-8">
         <Carousel images={setupImages} />
       </div>
 
-      <div className="prose prose-invert prose-amber prose-a:text-amber-400 max-w-none">
+      <div className="prose prose-amber prose-a:text-accent max-w-none">
         <p>
           I have very little knowledge of what camping in the bed of a truck is going to be like.
           I figured getting a camper shell would be a good place to start. I dove into the depths
