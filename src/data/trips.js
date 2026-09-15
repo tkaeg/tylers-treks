@@ -993,22 +993,15 @@ export const trips = [
         contentKey: 'september-2026/clouds-rest',
         subStops: [
           {
-            id: 'sunrise-lakes-trail',
-            name: 'Sunrise Lakes Trail',
-            coords: [-119.46094, 37.78987],
-            images: [
-              { src: 'images/20260912/sunrise_lakes_trail_1.jpg', alt: 'Sunrise Lakes Trail', caption: '' },
-              { src: 'images/20260912/sunrise_lakes_trail_2.jpg', alt: 'Resting on the Sunrise Lakes Trail', caption: '' },
-              { src: 'images/20260912/sunrise_lakes_trail_3.jpg', alt: 'Mule deer along the trail', caption: '' },
-              { src: 'images/20260912/sunrise_lakes_trail_4.jpg', alt: 'One of the Sunrise Lakes', caption: '' },
-              { src: 'images/20260912/sunrise_lakes_trail_5.mov', alt: 'Sunrise Lakes Trail', caption: '' },
-            ],
-          },
-          {
-            id: 'clouds-rest-summit',
+            id: 'clouds-rest-trail',
             name: 'Clouds Rest',
             coords: [-119.4895, 37.76772],
             images: [
+              { src: 'images/20260912/sunrise_lakes_trail_1.jpg', alt: 'On the Clouds Rest Trail', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_2.jpg', alt: 'Resting on the Clouds Rest Trail', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_3.jpg', alt: 'Mule deer along the trail', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_4.jpg', alt: 'One of the Sunrise Lakes', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_5.mov', alt: 'Clouds Rest Trail', caption: '' },
               { src: 'images/20260912/clouds_rest_1.jpg', alt: 'Approaching the Clouds Rest summit ridge', caption: '' },
               { src: 'images/20260912/clouds_rest_2.jpg', alt: 'View from the Clouds Rest summit', caption: '' },
               { src: 'images/20260912/clouds_rest_3.jpg', alt: 'Half Dome and Yosemite Valley from Clouds Rest', caption: '' },
