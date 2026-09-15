@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const tripLinks = [
+  { to: '/september-2026', label: 'September 2026' },
   { to: '/august-2026', label: 'August 2026' },
   { to: '/june-2026', label: 'June 2026' },
   { to: '/may-2026', label: 'May 2026' },

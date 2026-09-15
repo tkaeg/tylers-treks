@@ -832,4 +832,229 @@ export const trips = [
       },
     ],
   },
+  {
+    slug: 'september-2026',
+    label: 'September 2026',
+    month: 'September',
+    year: 2026,
+    homePreviewImage: 'images/20260910/glacier_point_1.webp',
+    homePreviewAlt: 'Half Dome from Glacier Point, Yosemite National Park',
+    routes: [
+      // LA → Yosemite (South Entrance) → Valley → Tioga Road / Clouds Rest → back to LA (Sep 10–13)
+      [
+        [-118.24, 34.05],    // LA
+        [-119.77, 36.75],    // Fresno
+        [-119.65, 37.53],    // Wawona / South Entrance
+        [-119.5629, 37.7380],// Yosemite Valley (Upper Pines)
+        [-119.4679, 37.8377],// Tioga Road — Tenaya Lake / Clouds Rest
+        [-119.7996, 37.7446],// Crane Flat
+        [-119.6769, 37.7156],// Tunnel View
+        [-119.65, 37.53],
+        [-119.77, 36.75],
+        [-118.24, 34.05],    // back to LA
+      ],
+    ],
+    stops: [
+      {
+        id: 'glacier-point',
+        date: 'September 10, 2026',
+        nationalPark: 'Yosemite National Park',
+        location: 'Yosemite National Park, California',
+        coords: [-119.57289, 37.72918],
+        coverImage: 'images/20260910/glacier_point_1.jpg',
+        coverAlt: 'Half Dome from Glacier Point',
+        contentKey: 'september-2026/glacier-point',
+        subStops: [
+          {
+            id: 'glacier-point-overlook',
+            name: 'Glacier Point',
+            coords: [-119.57289, 37.72918],
+            images: [
+              { src: 'images/20260910/glacier_point_1.jpg', alt: 'Half Dome from Glacier Point', caption: '' },
+              { src: 'images/20260910/glacier_point_2.jpg', alt: 'Yosemite Valley from Glacier Point', caption: '' },
+            ],
+          },
+          {
+            id: 'sentinel-dome',
+            name: 'Sentinel Dome',
+            coords: [-119.58452, 37.72331],
+            images: [
+              { src: 'images/20260910/sentinel_dome_1.jpg', alt: 'Sentinel Dome', caption: '' },
+              { src: 'images/20260910/sentinel_dome_2.jpg', alt: 'Sentinel Dome', caption: '' },
+              { src: 'images/20260910/sentinel_dome_3.jpg', alt: 'Sentinel Dome', caption: '' },
+              { src: 'images/20260910/sentinel_dome_4.jpg', alt: 'El Capitan from Sentinel Dome', caption: '' },
+              { src: 'images/20260910/sentinel_dome_5.jpg', alt: 'Sentinel Dome summit', caption: '' },
+            ],
+          },
+          {
+            id: 'taft-point',
+            name: 'Taft Point',
+            coords: [-119.60573, 37.71314],
+            images: [
+              { src: 'images/20260910/taft_point_1.jpg', alt: 'Taft Point cliff edge', caption: '' },
+              { src: 'images/20260910/taft_point_2.jpg', alt: 'El Capitan from Taft Point', caption: '' },
+              { src: 'images/20260910/taft_point_3.jpg', alt: 'Grouse along the Taft Point trail', caption: '' },
+              { src: 'images/20260910/taft_point_4.jpg', alt: 'Taft Point overlook', caption: '' },
+              { src: 'images/20260910/taft_point_5.jpg', alt: 'Yosemite Falls from the Taft Point trail', caption: '' },
+            ],
+          },
+          {
+            id: 'upper-pines-campground',
+            name: 'Upper Pines Campground',
+            coords: [-119.56312, 37.73798],
+            images: [
+              { src: 'images/20260910/upper_pines_1.jpg', alt: 'Yosemite Valley near Upper Pines Campground', caption: '' },
+              { src: 'images/20260910/upper_pines_2.jpg', alt: 'Yosemite Valley near Upper Pines Campground', caption: '' },
+              { src: 'images/20260910/upper_pines_3.jpg', alt: 'Half Dome from Upper Pines Campground', caption: '' },
+              { src: 'images/20260910/upper_pines_4.jpg', alt: 'Sunset over Upper Pines Campground', caption: '' },
+              { src: 'images/20260911/upper_pines_5.jpg', alt: 'Morning at Upper Pines Campground', caption: '' },
+              { src: 'images/20260911/upper_pines_6.jpg', alt: 'Morning at Upper Pines Campground', caption: '' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'vernal-and-nevada-falls',
+        date: 'September 11, 2026',
+        nationalPark: 'Yosemite National Park',
+        location: 'Yosemite Valley, Yosemite National Park, California',
+        coords: [-119.54518, 37.7268],
+        coverImage: 'images/20260911/vernal_fall_3.jpg',
+        coverAlt: 'Vernal Fall',
+        contentKey: 'september-2026/vernal-and-nevada-falls',
+        subStops: [
+          {
+            id: 'vernal-fall',
+            name: 'Vernal Fall',
+            coords: [-119.54518, 37.7268],
+            images: [
+              { src: 'images/20260911/vernal_fall_1.jpg', alt: 'Mist Trail steps up to Vernal Fall', caption: '' },
+              { src: 'images/20260911/vernal_fall_2.jpg', alt: 'Vernal Fall', caption: '' },
+              { src: 'images/20260911/vernal_fall_3.jpg', alt: 'Vernal Fall with a rainbow in the mist', caption: '' },
+              { src: 'images/20260911/vernal_fall_4.jpg', alt: 'Vernal Fall', caption: '' },
+              { src: 'images/20260911/vernal_fall_5.jpg', alt: 'Emerald pool at the base of Vernal Fall', caption: '' },
+              { src: 'images/20260911/vernal_fall_6.jpg', alt: 'At the base of Vernal Fall', caption: '' },
+              { src: 'images/20260911/vernal_fall_7.jpg', alt: 'Vernal Fall from the Mist Trail', caption: '' },
+              { src: 'images/20260911/vernal_fall_8.mov', alt: 'Vernal Fall', caption: '' },
+            ],
+          },
+          {
+            id: 'emerald-pool',
+            name: 'Emerald Pool',
+            coords: [-119.54224, 37.72725],
+            images: [
+              { src: 'images/20260911/emerald_pool_1.jpg', alt: 'Emerald Pool above Vernal Fall', caption: '' },
+              { src: 'images/20260911/emerald_pool_2.jpg', alt: 'Swimming in Emerald Pool', caption: '' },
+            ],
+          },
+          {
+            id: 'nevada-fall',
+            name: 'Nevada Fall',
+            coords: [-119.53365, 37.72618],
+            images: [
+              { src: 'images/20260911/nevada_fall_1.jpg', alt: 'Nevada Fall', caption: '' },
+              { src: 'images/20260911/nevada_fall_2.jpg', alt: 'Nevada Fall', caption: '' },
+              { src: 'images/20260911/nevada_fall_3.jpg', alt: 'Resting on the granite above Nevada Fall', caption: '' },
+              { src: 'images/20260911/nevada_fall_4.jpg', alt: 'Looking down the top of Vernal Fall', caption: '' },
+              { src: 'images/20260911/nevada_fall_5.jpg', alt: 'Yosemite Valley from near Nevada Fall', caption: '' },
+            ],
+          },
+          {
+            id: 'sentinel-beach',
+            name: 'Sentinel Beach',
+            coords: [-119.60495, 37.73561],
+            images: [
+              { src: 'images/20260911/sentinel_beach_1.jpg', alt: 'Sentinel Beach on the Merced River', caption: '' },
+              { src: 'images/20260911/sentinel_beach_2.jpg', alt: 'Cooling off at Sentinel Beach', caption: '' },
+            ],
+          },
+          {
+            id: 'crane-flat',
+            name: 'Crane Flat Campground',
+            coords: [-119.79919, 37.74464],
+            images: [
+              { src: 'images/20260911/crane_flat_1.jpg', alt: 'Crane Flat Campground', caption: '' },
+              { src: 'images/20260911/crane_flat_2.jpg', alt: 'Crane Flat Campground', caption: '' },
+              { src: 'images/20260911/crane_flat_3.jpg', alt: 'Crane Flat Campground', caption: '' },
+              { src: 'images/20260911/crane_flat_4.jpg', alt: 'Crane Flat Campground', caption: '' },
+              { src: 'images/20260911/crane_flat_5.jpg', alt: 'Evening at Crane Flat Campground', caption: '' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'clouds-rest',
+        date: 'September 12, 2026',
+        nationalPark: 'Yosemite National Park',
+        location: 'Tioga Road, Yosemite National Park, California',
+        coords: [-119.4895, 37.76772],
+        coverImage: 'images/20260912/clouds_rest_4.jpg',
+        coverAlt: 'Clouds Rest summit',
+        contentKey: 'september-2026/clouds-rest',
+        subStops: [
+          {
+            id: 'sunrise-lakes-trail',
+            name: 'Sunrise Lakes Trail',
+            coords: [-119.46094, 37.78987],
+            images: [
+              { src: 'images/20260912/sunrise_lakes_trail_1.jpg', alt: 'Sunrise Lakes Trail', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_2.jpg', alt: 'Resting on the Sunrise Lakes Trail', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_3.jpg', alt: 'Mule deer along the trail', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_4.jpg', alt: 'One of the Sunrise Lakes', caption: '' },
+              { src: 'images/20260912/sunrise_lakes_trail_5.mov', alt: 'Sunrise Lakes Trail', caption: '' },
+            ],
+          },
+          {
+            id: 'clouds-rest-summit',
+            name: 'Clouds Rest',
+            coords: [-119.4895, 37.76772],
+            images: [
+              { src: 'images/20260912/clouds_rest_1.jpg', alt: 'Approaching the Clouds Rest summit ridge', caption: '' },
+              { src: 'images/20260912/clouds_rest_2.jpg', alt: 'View from the Clouds Rest summit', caption: '' },
+              { src: 'images/20260912/clouds_rest_3.jpg', alt: 'Half Dome and Yosemite Valley from Clouds Rest', caption: '' },
+              { src: 'images/20260912/clouds_rest_4.jpg', alt: 'Feet dangling off the Clouds Rest summit', caption: '' },
+              { src: 'images/20260912/clouds_rest_5.jpg', alt: 'At the summit of Clouds Rest', caption: '' },
+              { src: 'images/20260912/clouds_rest_6.jpg', alt: 'Hiking the Clouds Rest ridge', caption: '' },
+              { src: 'images/20260912/clouds_rest_7.jpg', alt: 'Taking a break on the way back down', caption: '' },
+              { src: 'images/20260912/clouds_rest_8.mov', alt: 'Clouds Rest summit', caption: '' },
+            ],
+          },
+          {
+            id: 'tenaya-lake',
+            name: 'Tenaya Lake',
+            coords: [-119.46684, 37.82597],
+            images: [
+              { src: 'images/20260912/tenaya_lake_1.jpg', alt: 'Swimming in Tenaya Lake', caption: '' },
+              { src: 'images/20260912/tenaya_lake_2.jpg', alt: 'Tenaya Lake', caption: '' },
+            ],
+          },
+          {
+            id: 'crane-flat-camp',
+            name: 'Crane Flat Campground',
+            coords: [-119.79967, 37.74453],
+            images: [
+              { src: 'images/20260912/crane_flat_camp_1.jpg', alt: 'Cooking over the fire at Crane Flat', caption: '' },
+              { src: 'images/20260912/crane_flat_camp_2.jpg', alt: 'Crane Flat Campground', caption: '' },
+              { src: 'images/20260912/crane_flat_camp_3.jpg', alt: 'Steaks on the grill at Crane Flat', caption: '' },
+              { src: 'images/20260912/crane_flat_camp_4.jpg', alt: 'Playing Monopoly Deal at camp', caption: '' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'tunnel-view',
+        date: 'September 13, 2026',
+        nationalPark: 'Yosemite National Park',
+        location: 'Tunnel View, Yosemite National Park, California',
+        coords: [-119.67691, 37.71562],
+        coverImage: 'images/20260913/tunnel_view_1.jpg',
+        coverAlt: 'Tunnel View, Yosemite Valley',
+        contentKey: 'september-2026/tunnel-view',
+        images: [
+          { src: 'images/20260913/tunnel_view_1.jpg', alt: 'Tunnel View, Yosemite Valley', caption: '' },
+          { src: 'images/20260913/tunnel_view_2.jpg', alt: 'Tunnel View, Yosemite Valley', caption: '' },
+        ],
+      },
+    ],
+  },
 ]

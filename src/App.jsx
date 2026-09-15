@@ -8,6 +8,7 @@ import January2026 from './pages/January2026'
 import May2026 from './pages/May2026'
 import June2026 from './pages/June2026'
 import August2026 from './pages/August2026'
+import September2026 from './pages/September2026'
 import NationalParks from './pages/NationalParks'
 
 function ScrollToTop() {
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/may-2026" element={<May2026 />} />
         <Route path="/june-2026" element={<June2026 />} />
         <Route path="/august-2026" element={<August2026 />} />
+        <Route path="/september-2026" element={<September2026 />} />
         <Route path="/national-parks" element={<NationalParks />} />
       </Routes>
     </div>
