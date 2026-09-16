@@ -1,9 +1,10 @@
 import { useState, useCallback, useRef } from 'react'
 import { imageUrl } from '../data/imageUrl'
+import Lightbox from './Lightbox'
 
 const VIDEO_EXT = /\.(mov|mp4|webm|MOV|MP4|WEBM|hevc)$/i
 
-function MediaItem({ src, alt, className }) {
+function MediaItem({ src, alt, className, onClick }) {
   if (VIDEO_EXT.test(src)) {
     return (
       <video
@@ -20,8 +21,9 @@ function MediaItem({ src, alt, className }) {
       key={src}
       src={src}
       alt={alt}
-      className={`${className} opacity-0 transition-opacity duration-500`}
+      className={`${className} opacity-0 transition-opacity duration-500 ${onClick ? 'cursor-zoom-in' : ''}`}
       onLoad={e => e.currentTarget.classList.remove('opacity-0')}
+      onClick={onClick}
       loading="lazy"
       draggable={false}
     />
@@ -30,6 +32,7 @@ function MediaItem({ src, alt, className }) {
 
 export default function Carousel({ images }) {
   const [current, setCurrent] = useState(0)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
   const touchStartX = useRef(null)
   const touchStartY = useRef(null)
 
@@ -73,6 +76,7 @@ export default function Carousel({ images }) {
           src={resolvedSrc}
           alt={image.alt}
           className="w-full h-full object-contain"
+          onClick={VIDEO_EXT.test(resolvedSrc) ? undefined : () => setLightboxOpen(true)}
         />
         {image.caption && (
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-4 py-3">
@@ -110,6 +114,17 @@ export default function Carousel({ images }) {
             ))}
           </div>
         </>
+      )}
+
+      {lightboxOpen && (
+        <Lightbox
+          src={resolvedSrc}
+          alt={image.alt}
+          onClose={() => setLightboxOpen(false)}
+          onPrev={prev}
+          onNext={next}
+          hasMultiple={images.length > 1}
+        />
       )}
     </div>
   )

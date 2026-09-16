@@ -1,9 +1,12 @@
+import { useState } from 'react'
 import Carousel from './Carousel'
+import Lightbox from './Lightbox'
 import { imageUrl } from '../data/imageUrl'
 import content from '../data/content'
 
 export default function StopSection({ stop }) {
   const html = content[stop.contentKey] || ''
+  const [coverLightboxOpen, setCoverLightboxOpen] = useState(false)
 
   return (
     <article id={stop.id} className="scroll-mt-16 mb-12 pb-12 border-b border-line last:border-b-0">
@@ -15,11 +18,20 @@ export default function StopSection({ stop }) {
           <img
             src={imageUrl(stop.coverImage)}
             alt={stop.coverAlt}
-            className="w-full h-full object-contain opacity-0 transition-opacity duration-500"
+            className="w-full h-full object-contain opacity-0 transition-opacity duration-500 cursor-zoom-in"
             onLoad={e => e.currentTarget.classList.remove('opacity-0')}
+            onClick={() => setCoverLightboxOpen(true)}
             loading="lazy"
           />
         </div>
+      )}
+
+      {coverLightboxOpen && (
+        <Lightbox
+          src={imageUrl(stop.coverImage)}
+          alt={stop.coverAlt}
+          onClose={() => setCoverLightboxOpen(false)}
+        />
       )}
 
       {html && (
