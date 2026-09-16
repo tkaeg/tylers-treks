@@ -45,6 +45,15 @@ export default function Carousel({ images }) {
   }, [images.length])
 
   const handleTouchStart = (e) => {
+    // Native <video> controls (scrub bar, fullscreen button, etc.) live in a
+    // shadow root, so a tap on them retargets here as the <video> itself.
+    // Don't hijack that as a swipe, or a slight finger drift while tapping
+    // fullscreen flips `current` and yanks the video out mid-request.
+    if (e.target.tagName === 'VIDEO') {
+      touchStartX.current = null
+      touchStartY.current = null
+      return
+    }
     touchStartX.current = e.touches[0].clientX
     touchStartY.current = e.touches[0].clientY
   }
