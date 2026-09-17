@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/september-2026" element={<September2026 />} />
         <Route path="/national-parks" element={<NationalParks />} />
       </Routes>
+      <Analytics />
     </div>
   )
 }
