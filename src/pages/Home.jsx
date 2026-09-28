@@ -22,8 +22,7 @@ export default function Home() {
           </h1>
           <p className="text-ink text-lg md:text-xl mb-2">California National Parks — 2026</p>
           <p className="text-muted text-sm max-w-lg mx-auto leading-relaxed">
-            Exploring every national park in California. In 2026, I've made a goal of going to all of the national parks in California.
-          I made this site to document my trips and share my experiences. They're in no way advice as I have no idea what I'm doin. It'll often be filled with random things that happened on the trip that have no relevance to the park itself so feel free to just look at the pictures. I hope you enjoy following along on my adventures.
+            Tales from the natural world
           </p>
         </div>
       </section>
