@@ -1186,7 +1186,6 @@ export const trips = [
               { src: 'images/20260926/zion_scenic_drive_4.jpg', alt: 'Zion Canyon', caption: '' },
               { src: 'images/20260926/the_narrows_20.jpg', alt: 'Back at the Zion park entrance', caption: '' },
               { src: 'images/20260926/the_narrows_21.jpg', alt: 'Zion National Park', caption: '' },
-              { src: 'images/20260926/the_narrows_22.jpg', alt: 'Leaving Zion', caption: '' },
             ],
           },
           {
