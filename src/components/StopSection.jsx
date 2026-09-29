@@ -22,15 +22,17 @@ export default function StopSection({ stop }) {
       </p>
 
       {stop.coverImage && (
-        <div className="w-full aspect-[4/3] md:aspect-[16/9] bg-card rounded-lg mb-6 overflow-hidden">
-          <img
-            src={imageUrl(stop.coverImage)}
-            alt={stop.coverAlt}
-            className="w-full h-full object-contain opacity-0 transition-opacity duration-500 cursor-zoom-in"
-            onLoad={e => e.currentTarget.classList.remove('opacity-0')}
-            onClick={() => setCoverLightboxOpen(true)}
-            loading="lazy"
-          />
+        <div className="w-full flex justify-center mb-6">
+          <div className="w-fit max-w-full h-72 md:h-96 bg-card rounded-lg overflow-hidden">
+            <img
+              src={imageUrl(stop.coverImage)}
+              alt={stop.coverAlt}
+              className="h-full w-auto max-w-full object-contain opacity-0 transition-opacity duration-500 cursor-zoom-in"
+              onLoad={e => e.currentTarget.classList.remove('opacity-0')}
+              onClick={() => setCoverLightboxOpen(true)}
+              loading="lazy"
+            />
+          </div>
         </div>
       )}
 

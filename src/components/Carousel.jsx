@@ -77,21 +77,23 @@ export default function Carousel({ images }) {
   return (
     <div className="relative w-full select-none">
       <div
-        className="relative aspect-[4/3] md:aspect-video bg-card overflow-hidden rounded-lg touch-pan-y"
+        className="w-full flex justify-center touch-pan-y"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <MediaItem
-          src={resolvedSrc}
-          alt={image.alt}
-          className="w-full h-full object-contain"
-          onClick={VIDEO_EXT.test(resolvedSrc) ? undefined : () => setLightboxOpen(true)}
-        />
-        {image.caption && (
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-4 py-3">
-            <p className="text-white text-sm leading-snug">{image.caption}</p>
-          </div>
-        )}
+        <div className="relative w-fit max-w-full h-72 md:h-96 bg-card overflow-hidden rounded-lg">
+          <MediaItem
+            src={resolvedSrc}
+            alt={image.alt}
+            className="h-full w-auto max-w-full object-contain"
+            onClick={VIDEO_EXT.test(resolvedSrc) ? undefined : () => setLightboxOpen(true)}
+          />
+          {image.caption && (
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-4 py-3">
+              <p className="text-white text-sm leading-snug">{image.caption}</p>
+            </div>
+          )}
+        </div>
       </div>
 
       {images.length > 1 && (
