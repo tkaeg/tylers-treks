@@ -1084,8 +1084,8 @@ export const trips = [
         inCaliforniaGoal: false,
         location: 'Grand Canyon National Park, Arizona',
         coords: [-112.0821, 36.0619],
-        coverImage: 'images/20260925/bright_angel_trail_11.jpg',
-        coverAlt: 'Bright Angel Trail, Grand Canyon National Park',
+        coverImage: 'images/20260925/south_kaibab_trail_6.jpg',
+        coverAlt: 'South Kaibab Trail, Grand Canyon National Park',
         contentKey: 'september-2026/rim-to-river',
         subStops: [
           {
