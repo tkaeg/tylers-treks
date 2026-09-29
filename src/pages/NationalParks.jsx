@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import StopSection from '../components/StopSection'
 import AnchorLink from '../components/AnchorLink'
 import { trips } from '../data/trips'
@@ -43,6 +44,7 @@ const californiaIds = collectIds(californiaStops)
 
 export default function NationalParks() {
   useHashScroll()
+  const navigate = useNavigate()
   const [filter, setFilter] = useState(() => {
     const hash = window.location.hash.replace('#', '')
     return hash && !californiaIds.has(hash) ? 'all' : 'california'
@@ -51,8 +53,14 @@ export default function NationalParks() {
   const stops = filter === 'california' ? californiaStops : allStops
   const parks = groupByPark(stops)
 
+  // A plain #hash href can misbehave in some mobile browser chrome /
+  // in-app WebViews ("can't open this page"), so route through
+  // react-router with a fully-qualified path+hash instead — same
+  // pattern the map markers use — and scroll directly for a guaranteed
+  // smooth jump even when the hash isn't changing.
   const jumpTo = (e, slug) => {
     e.preventDefault()
+    navigate(`/national-parks#${slug}`)
     document.getElementById(slug)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
@@ -81,7 +89,7 @@ export default function NationalParks() {
         {parks.map(([parkName]) => (
           <a
             key={parkName}
-            href={`#${slugify(parkName)}`}
+            href={`/national-parks#${slugify(parkName)}`}
             onClick={e => jumpTo(e, slugify(parkName))}
             className="text-sm px-3 py-1.5 rounded-full border border-line text-muted hover:text-accent hover:border-accent/50 transition-colors no-underline"
           >
