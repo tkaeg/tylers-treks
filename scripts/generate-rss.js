@@ -9,7 +9,7 @@ function loadMarkdown(contentKey) {
   return existsSync(path) ? readFileSync(path, 'utf-8') : ''
 }
 
-const BASE_URL = process.env.SITE_URL || 'https://tylerstreks.vercel.app'
+const BASE_URL = process.env.SITE_URL || 'https://www.tylers-treks.com'
 
 function escapeXml(str) {
   return str
