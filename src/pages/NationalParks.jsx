@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import StopSection from '../components/StopSection'
+import AnchorLink from '../components/AnchorLink'
 import { trips } from '../data/trips'
 import { useHashScroll } from '../hooks/useHashScroll'
+
+const slugify = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 
 const npStops = trips
   .flatMap(t => t.stops)
@@ -49,9 +52,10 @@ export default function NationalParks() {
       </div>
 
       {parks.map(([parkName, stops]) => (
-        <section key={parkName} className="mb-16">
-          <h2 className="text-xl font-semibold text-ink mb-8 pb-2 border-b border-line">
+        <section key={parkName} id={slugify(parkName)} className="scroll-mt-16 mb-16">
+          <h2 className="text-xl font-semibold text-ink mb-8 pb-2 border-b border-line flex items-center gap-2">
             {parkName}
+            <AnchorLink id={slugify(parkName)} label={parkName} />
           </h2>
           {stops.map(stop => (
             <StopSection key={stop.id} stop={stop} />
