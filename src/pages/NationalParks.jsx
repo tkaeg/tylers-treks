@@ -23,9 +23,30 @@ function groupByPark(stops) {
 const californiaStops = npStops.filter(s => s.inCaliforniaGoal !== false)
 const allStops = npStops
 
+// Every anchor id that exists under the California filter (park headings,
+// stops, and sub-stops). Used to detect a deep link to a park/stop that
+// only exists under "All" so we can switch the filter before the
+// hash-scroll effect runs and comes up empty.
+function collectIds(stops) {
+  const ids = new Set()
+  for (const [parkName, parkStops] of groupByPark(stops)) {
+    ids.add(slugify(parkName))
+    for (const stop of parkStops) {
+      ids.add(stop.id)
+      stop.subStops?.forEach(sub => ids.add(sub.id))
+    }
+  }
+  return ids
+}
+
+const californiaIds = collectIds(californiaStops)
+
 export default function NationalParks() {
   useHashScroll()
-  const [filter, setFilter] = useState('california')
+  const [filter, setFilter] = useState(() => {
+    const hash = window.location.hash.replace('#', '')
+    return hash && !californiaIds.has(hash) ? 'all' : 'california'
+  })
 
   const stops = filter === 'california' ? californiaStops : allStops
   const parks = groupByPark(stops)
