@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { MenuIcon, CloseIcon } from './icons'
 
 const tripLinks = [
   { to: '/september-2026', label: 'September 2026' },
@@ -119,7 +120,7 @@ export default function Navbar() {
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
           >
-            <span className="text-2xl leading-none">{menuOpen ? '✕' : '☰'}</span>
+            {menuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
       </nav>

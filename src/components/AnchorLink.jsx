@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LinkIcon, CheckIcon } from './icons'
 
 // Small permalink icon for a heading. Renders a real <a href="#id"> so it
 // works with right-click "Copy Link" / long-press on mobile even without JS,
@@ -23,9 +24,9 @@ export default function AnchorLink({ id, label }) {
       onClick={handleClick}
       aria-label={`Copy link to ${label || id}`}
       title={copied ? 'Copied!' : 'Copy link'}
-      className="text-muted hover:text-accent transition-colors no-underline text-sm shrink-0"
+      className="text-muted hover:text-accent transition-colors no-underline shrink-0 inline-flex"
     >
-      {copied ? '✓' : '🔗'}
+      {copied ? <CheckIcon className="w-3.5 h-3.5" /> : <LinkIcon className="w-3.5 h-3.5" />}
     </a>
   )
 }

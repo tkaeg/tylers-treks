@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Carousel from './Carousel'
 import Lightbox from './Lightbox'
 import AnchorLink from './AnchorLink'
+import { PinIcon } from './icons'
 import { imageUrl } from '../data/imageUrl'
 import content from '../data/content'
 
@@ -15,7 +16,10 @@ export default function StopSection({ stop }) {
         {stop.date}
         <AnchorLink id={stop.id} label={stop.location} />
       </p>
-      <p className="text-muted text-sm mb-5">📍 {stop.location}</p>
+      <p className="text-muted text-sm mb-5 flex items-center gap-1.5">
+        <PinIcon className="w-3.5 h-3.5 shrink-0" />
+        {stop.location}
+      </p>
 
       {stop.coverImage && (
         <div className="w-full aspect-[4/3] md:aspect-[16/9] bg-card rounded-lg mb-6 overflow-hidden">
