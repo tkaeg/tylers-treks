@@ -30,6 +30,11 @@ export default function NationalParks() {
   const stops = filter === 'california' ? californiaStops : allStops
   const parks = groupByPark(stops)
 
+  const jumpTo = (e, slug) => {
+    e.preventDefault()
+    document.getElementById(slug)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   return (
     <main className="pt-20 pb-16 max-w-2xl mx-auto px-4 md:px-6">
       <h1 className="text-3xl font-bold text-accent mb-1">National Parks</h1>
@@ -50,6 +55,19 @@ export default function NationalParks() {
           </button>
         </div>
       </div>
+
+      <nav aria-label="Jump to park" className="flex flex-wrap gap-2 mb-10">
+        {parks.map(([parkName]) => (
+          <a
+            key={parkName}
+            href={`#${slugify(parkName)}`}
+            onClick={e => jumpTo(e, slugify(parkName))}
+            className="text-sm px-3 py-1.5 rounded-full border border-line text-muted hover:text-accent hover:border-accent/50 transition-colors no-underline"
+          >
+            {parkName}
+          </a>
+        ))}
+      </nav>
 
       {parks.map(([parkName, stops]) => (
         <section key={parkName} id={slugify(parkName)} className="scroll-mt-16 mb-16">
