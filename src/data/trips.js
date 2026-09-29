@@ -1066,8 +1066,8 @@ export const trips = [
         inCaliforniaGoal: false,
         location: 'Mather Campground, Grand Canyon National Park, Arizona',
         coords: [-112.1401, 36.0544],
-        coverImage: 'images/20260924/mather_campground_3.jpg',
-        coverAlt: 'Evening at the South Rim of the Grand Canyon',
+        coverImage: 'images/20260924/mather_campground_1.jpg',
+        coverAlt: 'South Rim of the Grand Canyon',
         contentKey: 'september-2026/mather-campground',
         images: [
           { src: 'images/20260924/mather_campground_1.jpg', alt: 'South Rim of the Grand Canyon', caption: '' },
