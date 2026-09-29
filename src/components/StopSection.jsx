@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Carousel from './Carousel'
 import Lightbox from './Lightbox'
+import AnchorLink from './AnchorLink'
 import { imageUrl } from '../data/imageUrl'
 import content from '../data/content'
 
@@ -10,7 +11,10 @@ export default function StopSection({ stop }) {
 
   return (
     <article id={stop.id} className="scroll-mt-16 mb-12 pb-12 border-b border-line last:border-b-0">
-      <p className="text-accent text-sm font-semibold mb-1">{stop.date}</p>
+      <p className="text-accent text-sm font-semibold mb-1 flex items-center gap-2">
+        {stop.date}
+        <AnchorLink id={stop.id} label={stop.location} />
+      </p>
       <p className="text-muted text-sm mb-5">📍 {stop.location}</p>
 
       {stop.coverImage && (
@@ -47,6 +51,7 @@ export default function StopSection({ stop }) {
             <h3 className="text-base font-semibold text-ink mb-4 flex items-center gap-2">
               <span className="w-1 h-4 bg-accent rounded-full inline-block" />
               {sub.name}
+              <AnchorLink id={sub.id} label={sub.name} />
             </h3>
             {sub.images?.length > 0 && <Carousel images={sub.images} />}
           </div>
