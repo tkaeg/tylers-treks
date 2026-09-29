@@ -1165,15 +1165,6 @@ export const trips = [
         ],
       },
       {
-        id: 'one-last-look',
-        date: 'September 26, 2026',
-        nationalPark: 'Grand Canyon National Park',
-        inCaliforniaGoal: false,
-        location: 'South Rim, Grand Canyon National Park, Arizona',
-        coords: [-112.0938, 36.0479],
-        contentKey: 'september-2026/one-last-look',
-      },
-      {
         id: 'the-narrows',
         date: 'September 26, 2026',
         nationalPark: 'Zion National Park',
