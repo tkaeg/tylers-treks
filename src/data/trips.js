@@ -1074,6 +1074,7 @@ export const trips = [
           { src: 'images/20260924/mather_campground_2.jpg', alt: 'South Rim of the Grand Canyon', caption: '' },
           { src: 'images/20260924/mather_campground_3.jpg', alt: 'Evening at the South Rim of the Grand Canyon', caption: '' },
           { src: 'images/20260924/mather_campground_4.jpg', alt: 'Sunset over the Grand Canyon', caption: '' },
+          { src: 'images/20260925/bright_angel_trail_17.jpg', alt: 'Done — back on the South Rim', caption: '' },
         ],
       },
       {
@@ -1092,7 +1093,6 @@ export const trips = [
             name: 'South Kaibab Trail',
             coords: [-112.0821, 36.0619],
             images: [
-              { src: 'images/20260925/south_kaibab_trail_1.jpg', alt: 'Leaving Mather Campground before dawn', caption: '' },
               { src: 'images/20260925/south_kaibab_trail_2.jpg', alt: 'South Kaibab Trailhead before sunrise', caption: '' },
               { src: 'images/20260925/south_kaibab_trail_3.jpg', alt: 'Descending the South Kaibab Trail in the dark', caption: '' },
               { src: 'images/20260925/south_kaibab_trail_4.jpg', alt: 'South Kaibab Trail', caption: '' },
@@ -1159,7 +1159,6 @@ export const trips = [
               { src: 'images/20260925/bright_angel_trail_14.jpg', alt: 'Bright Angel Trail', caption: '' },
               { src: 'images/20260925/bright_angel_trail_15.jpg', alt: 'Bright Angel Trail', caption: '' },
               { src: 'images/20260925/bright_angel_trail_16.jpg', alt: 'Back at Bright Angel Trailhead', caption: '' },
-              { src: 'images/20260925/bright_angel_trail_17.jpg', alt: 'Done — back on the South Rim', caption: '' },
             ],
           },
         ],
