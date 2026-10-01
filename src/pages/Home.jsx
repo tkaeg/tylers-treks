@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import CaliforniaMap from '../components/CaliforniaMap'
+import SubscribeForm from '../components/SubscribeForm'
 import { trips } from '../data/trips'
 import { imageUrl } from '../data/imageUrl'
 
@@ -21,9 +22,12 @@ export default function Home() {
             Tyler's Treks
           </h1>
           <p className="text-ink text-lg md:text-xl mb-2">California National Parks — 2026</p>
-          <p className="text-muted text-sm max-w-lg mx-auto leading-relaxed">
+          <p className="text-muted text-sm max-w-lg mx-auto leading-relaxed mb-6">
             Tales from the natural world
           </p>
+          <div className="flex justify-center">
+            <SubscribeForm />
+          </div>
         </div>
       </section>
 
