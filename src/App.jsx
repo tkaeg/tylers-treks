@@ -2,6 +2,7 @@ import { useEffect, Suspense, lazy } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 // Lazy-load every page so a route that never touches the map (e.g.
 // /national-parks) doesn't have to download Home's mapbox-gl bundle
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/national-parks" element={<NationalParks />} />
         </Routes>
       </Suspense>
+      <Footer />
       <Analytics />
     </div>
   )
