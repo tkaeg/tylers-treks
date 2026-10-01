@@ -1,0 +1,40 @@
+name: Notify subscribers of new trips
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/trips.js'
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Send notification for new stops
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: node scripts/notify-subscribers.js
+
+      - name: Commit updated notified-stops marker
+        run: |
+          if ! git diff --quiet -- .notified-stops.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add .notified-stops.json
+            git commit -m "chore: mark new trip stops as notified [skip ci]"
+            git push
+          fi
