@@ -1217,4 +1217,112 @@ export const trips = [
       },
     ],
   },
+  {
+    slug: 'october-2026',
+    label: 'October 2026',
+    month: 'October',
+    year: 2026,
+    homePreviewImage: 'images/20261003/water_canyon_beach_17.webp',
+    homePreviewAlt: 'Bechers Bay beach, Santa Rosa Island, Channel Islands National Park',
+    routes: [
+      // LA → Ventura Harbor → ferry to Santa Rosa Island → Painted Cave (Santa Cruz Island) → back to LA (Oct 3)
+      [
+        [-118.24, 34.05],    // LA
+        [-119.2655, 34.2475],// Ventura Harbor
+        [-119.5535, 34.0510],// Santa Cruz Island east end
+        [-120.0475, 34.0080],// Santa Rosa Island pier, Bechers Bay
+        [-119.8605, 34.0702],// Painted Cave, Santa Cruz Island
+        [-119.2655, 34.2475],// Ventura Harbor
+        [-118.24, 34.05],    // back to LA
+      ],
+    ],
+    stops: [
+      {
+        id: 'santa-rosa-island',
+        date: 'October 3, 2026',
+        nationalPark: 'Channel Islands National Park',
+        location: 'Santa Rosa Island, California',
+        coords: [-120.0475, 34.0000],
+        coverImage: 'images/20261003/water_canyon_beach_17.jpg',
+        coverAlt: 'Bechers Bay beach from the bluffs, Santa Rosa Island',
+        contentKey: 'october-2026/santa-rosa-island',
+        subStops: [
+          {
+            id: 'ferry-crossing',
+            name: 'Ferry Crossing',
+            coords: [-119.5535, 34.0510],
+            images: [
+              { src: 'images/20261003/ferry_crossing_1.mov', alt: 'Ferry ride out to the islands', caption: '' },
+              { src: 'images/20261003/ferry_crossing_2.jpg', alt: 'Santa Cruz Island from the ferry', caption: '' },
+              { src: 'images/20261003/ferry_crossing_3.jpg', alt: 'Island cliffs from the ferry', caption: '' },
+            ],
+          },
+          {
+            id: 'cherry-canyon',
+            name: 'Cherry Canyon',
+            coords: [-120.0570, 33.9965],
+            images: [
+              { src: 'images/20261003/cherry_canyon_1.jpg', alt: 'Santa Rosa Island pier at Bechers Bay', caption: '' },
+              { src: 'images/20261003/cherry_canyon_2.jpg', alt: 'Santa Rosa Island sign', caption: '' },
+              { src: 'images/20261003/cherry_canyon_3.jpg', alt: 'Road toward Cherry Canyon', caption: '' },
+              { src: 'images/20261003/cherry_canyon_4.jpg', alt: 'Cherry Canyon trailhead', caption: '' },
+              { src: 'images/20261003/cherry_canyon_5.jpg', alt: 'Cherry Canyon', caption: '' },
+              { src: 'images/20261003/cherry_canyon_6.jpg', alt: 'Cherry Canyon trail', caption: '' },
+              { src: 'images/20261003/cherry_canyon_7.jpg', alt: 'Lizard on Cherry Canyon trail', caption: '' },
+              { src: 'images/20261003/cherry_canyon_8.jpg', alt: 'Looking down Cherry Canyon', caption: '' },
+              { src: 'images/20261003/cherry_canyon_9.jpg', alt: 'View of the coast from the top of Cherry Canyon', caption: '' },
+              { src: 'images/20261003/cherry_canyon_10.jpg', alt: 'Trail along the top of Cherry Canyon', caption: '' },
+              { src: 'images/20261003/cherry_canyon_11.jpg', alt: 'Bechers Bay from the trail', caption: '' },
+              { src: 'images/20261003/cherry_canyon_12.jpg', alt: 'Heading back down toward Bechers Bay', caption: '' },
+            ],
+          },
+          {
+            id: 'water-canyon-beach',
+            name: 'Water Canyon Beach',
+            coords: [-120.0410, 33.9943],
+            images: [
+              { src: 'images/20261003/water_canyon_beach_1.jpg', alt: 'Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_2.jpg', alt: 'Lunch on Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_3.jpg', alt: 'Water Canyon Beach under the cliffs', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_4.jpg', alt: 'Long-billed curlew on Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_5.jpg', alt: 'Cliffs above Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_6.jpg', alt: 'Curlew taking off', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_7.jpg', alt: 'Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_8.jpg', alt: 'Clear water at Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_9.jpg', alt: 'Rocks at the end of the walkable coast', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_10.jpg', alt: 'Sandstone slot along the beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_11.jpg', alt: 'Pelican off Water Canyon Beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_12.jpg', alt: 'Bluffs above the beach', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_13.jpg', alt: 'Water Canyon Beach from the bluffs', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_14.jpg', alt: 'Cove below the bluffs', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_15.jpg', alt: 'Santa Cruz Island across the channel', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_16.jpg', alt: 'Bechers Bay from the bluffs', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_17.jpg', alt: 'Bechers Bay beach and cliffs', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_18.jpg', alt: 'Bechers Bay', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_19.jpg', alt: 'Bechers Bay', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_20.jpg', alt: 'Clear water off the bluffs', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_21.jpg', alt: 'Santa Rosa Island pier and the ferry', caption: '' },
+              { src: 'images/20261003/water_canyon_beach_22.jpg', alt: 'Bechers Bay beach', caption: '' },
+            ],
+          },
+          {
+            id: 'painted-cave',
+            name: 'Painted Cave',
+            coords: [-119.8605, 34.0702],
+            images: [
+              { src: 'images/20261003/painted_cave_1.jpg', alt: 'Santa Cruz Island from the ferry', caption: '' },
+              { src: 'images/20261003/painted_cave_2.jpg', alt: 'Approaching Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_3.jpg', alt: 'Entrance to Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_4.jpg', alt: 'Inside Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_5.jpg', alt: 'Inside Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_6.mov', alt: 'Inside Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_7.jpg', alt: 'The ferry inside Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_8.jpg', alt: 'Leaving Painted Cave', caption: '' },
+              { src: 'images/20261003/painted_cave_9.mov', alt: 'Ride back from Painted Cave', caption: '' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ]

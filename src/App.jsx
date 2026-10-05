@@ -15,6 +15,7 @@ const May2026 = lazy(() => import('./pages/May2026'))
 const June2026 = lazy(() => import('./pages/June2026'))
 const August2026 = lazy(() => import('./pages/August2026'))
 const September2026 = lazy(() => import('./pages/September2026'))
+const October2026 = lazy(() => import('./pages/October2026'))
 const NationalParks = lazy(() => import('./pages/NationalParks'))
 
 function ScrollToTop() {
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/june-2026" element={<June2026 />} />
           <Route path="/august-2026" element={<August2026 />} />
           <Route path="/september-2026" element={<September2026 />} />
+          <Route path="/october-2026" element={<October2026 />} />
           <Route path="/national-parks" element={<NationalParks />} />
         </Routes>
       </Suspense>

@@ -45,7 +45,7 @@ export default function Home() {
             <div key={trip.slug} className="flex items-center gap-1.5">
               <span
                 className="inline-block w-3 h-3 rounded-full flex-shrink-0"
-                style={{ backgroundColor: { 'december-2025': '#f59e0b', 'january-2026': '#60a5fa', 'may-2026': '#34d399', 'june-2026': '#a78bfa', 'august-2026': '#f472b6', 'september-2026': '#2dd4bf' }[trip.slug] || '#fff' }}
+                style={{ backgroundColor: { 'december-2025': '#f59e0b', 'january-2026': '#60a5fa', 'may-2026': '#34d399', 'june-2026': '#a78bfa', 'august-2026': '#f472b6', 'september-2026': '#2dd4bf', 'october-2026': '#fb923c' }[trip.slug] || '#fff' }}
               />
               <span className="text-muted text-xs">{trip.label}</span>
             </div>
