@@ -1243,8 +1243,8 @@ export const trips = [
         nationalPark: 'Channel Islands National Park',
         location: 'Santa Rosa Island, California',
         coords: [-120.0475, 34.0000],
-        coverImage: 'images/20261003/water_canyon_beach_17.jpg',
-        coverAlt: 'Bechers Bay beach from the bluffs, Santa Rosa Island',
+        coverImage: 'images/20261003/water_canyon_beach_22.jpg',
+        coverAlt: 'Bechers Bay beach, Santa Rosa Island',
         contentKey: 'october-2026/santa-rosa-island',
         subStops: [
           {
