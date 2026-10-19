@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { MenuIcon, CloseIcon } from './icons'
 
 const tripLinks = [
+  { to: '/october-2026', label: 'October 2026' },
   { to: '/september-2026', label: 'September 2026' },
   { to: '/august-2026', label: 'August 2026' },
   { to: '/june-2026', label: 'June 2026' },

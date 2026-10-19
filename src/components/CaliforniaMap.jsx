@@ -12,6 +12,7 @@ const TRIP_COLORS = {
   'june-2026':     '#a78bfa', // violet-400
   'august-2026':   '#f472b6', // pink-400
   'september-2026':'#2dd4bf', // teal-400
+  'october-2026':  '#fb923c', // orange-400
 }
 
 // Each trip has routes: an array of coordinate arrays (one per driving leg).
