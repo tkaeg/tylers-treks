@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Carousel from './Carousel'
 import Lightbox from './Lightbox'
 import AnchorLink from './AnchorLink'
+import Comments from './Comments'
 import { PinIcon } from './icons'
 import { imageUrl } from '../data/imageUrl'
 import content from '../data/content'
@@ -65,6 +66,8 @@ export default function StopSection({ stop }) {
       ) : (
         stop.images?.length > 0 && <Carousel images={stop.images} />
       )}
+
+      <Comments stopId={stop.id} />
     </article>
   )
 }
