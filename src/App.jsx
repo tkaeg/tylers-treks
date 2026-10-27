@@ -17,6 +17,8 @@ const August2026 = lazy(() => import('./pages/August2026'))
 const September2026 = lazy(() => import('./pages/September2026'))
 const October2026 = lazy(() => import('./pages/October2026'))
 const NationalParks = lazy(() => import('./pages/NationalParks'))
+const Terms = lazy(() => import('./pages/Terms'))
+const Privacy = lazy(() => import('./pages/Privacy'))
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -43,6 +45,8 @@ export default function App() {
           <Route path="/september-2026" element={<September2026 />} />
           <Route path="/october-2026" element={<October2026 />} />
           <Route path="/national-parks" element={<NationalParks />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </Suspense>
       <Footer />
