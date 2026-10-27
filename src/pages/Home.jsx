@@ -21,10 +21,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold text-accent mb-3 tracking-tight">
             Tyler's Treks
           </h1>
-          <p className="text-ink text-lg md:text-xl mb-2">California National Parks — 2026</p>
-          <p className="text-muted text-sm max-w-lg mx-auto leading-relaxed mb-6">
-            Tales from the natural world
-          </p>
+          <p className="text-ink text-lg md:text-xl mb-6">Tales from the natural world</p>
           <div className="flex justify-center">
             <SubscribeForm />
           </div>

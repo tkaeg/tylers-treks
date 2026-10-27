@@ -1,6 +1,6 @@
 # Tyler's Treks
 
-A personal travel blog documenting a 2026 goal of visiting every California National Park, camping from a truck with a camper shell.
+A personal travel blog documenting national park trips, camping from a truck with a camper shell, starting with a 2026 goal of visiting every California National Park.
 
 ## Stack
 

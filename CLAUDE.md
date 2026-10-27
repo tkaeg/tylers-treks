@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A personal travel blog documenting Tyler's 2026 goal of visiting every California National Park, camping out of a truck with a camper shell. The site combines trip narratives, photo/video galleries, and an interactive California map showing driving routes.
+A personal travel blog documenting Tyler's national park trips, camping out of a truck with a camper shell. It started with a 2026 goal of visiting every California National Park (completed October 2026) and now covers parks beyond California. The site combines trip narratives, photo/video galleries, and an interactive California map showing driving routes.
 
 ## Current Stack (Legacy)
 

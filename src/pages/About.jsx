@@ -16,8 +16,8 @@ export default function About() {
 
       <div className="prose prose-amber prose-a:text-accent max-w-none mb-10">
         <p>
-          In 2026, I've made a goal of going to all of the national parks in California.
-          I made this site to document my trips and share my experiences. It'll often be filled with random things that happened on the trip that have no relevance to the park itself so feel free to just look at the pictures. I hope you enjoy following along on my adventures
+          In 2026, I made a goal of going to all of the national parks in California. As of October I have completed that goal! But there's much more to explore!
+          I made this site to document my trips and share my experiences. It'll often be filled with random things that happened on the trip that have no relevance to the park itself so feel free to just look at the pictures. I hope you enjoy following along on my adventures.
         </p>
       </div>
 

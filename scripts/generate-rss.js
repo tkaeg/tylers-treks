@@ -44,7 +44,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
   <channel>
     <title>Tyler's Treks</title>
     <link>${BASE_URL}</link>
-    <description>Exploring every California national park in 2026, camping out of a truck.</description>
+    <description>Exploring national parks and camping out of a truck, starting with every park in California in 2026.</description>
     <language>en-us</language>
     <atom:link href="${BASE_URL}/rss.xml" rel="self" type="application/rss+xml" />
 ${items}
